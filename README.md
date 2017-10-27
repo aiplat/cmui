@@ -1,13 +1,15 @@
 # cmui
-超萌UI框架,快速布局
+超萌UI框架,快速布局<b>注意</b>
 <br />官方网站 aiplat.com
 <br /><br />
-cmreset.css
+<b>cmreset.css说明</b>
 <br /><br />盒模型采用IE盒子，即css3中的box-sizing值为border-box
 <br />样式中添加了bootstrap中的栅格布局，为了方便适应使用bootstrap前端开发者
 <br />使用bootstrap部分如:container、container-fluid、row、col-*-*,均有修改
 <br /><br />
-cmstyle.css
+<b>cmstyle.css说明</b>
+<br /><br />1,\<span class="cm_fs05"\>cmui\<\/span\>
+<br />意思cmui字体大小对应.cm_fs05{font-size:0.5em}
 <br /><br />
 <b>注意</b>
 <br /><br />请在html文件中添加meta如下:
