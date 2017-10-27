@@ -8,8 +8,9 @@
 <br />3,使用bootstrap部分如:container、container-fluid、row、col-xs-num、col-sm-num、col-md-num、col-lg-num,均有修改
 <br /><br />
 <b>cmstyle.css说明</b>
-<br /><br />1,使用em相对单位
-<br /><br />2,\<span class="cm_fs05"\>cmui\<\/span\>
+<br /><br />1,使用em相对单位,cmreset.css中同为em
+<br />宽高或长度厚度较小时部分单位使用px,如.cm_bb1e{border-bottom:1px solid #eee}
+<br />2,\<span class="cm_fs05"\>cmui\<\/span\>
 <br />意思cmui字体大小对应.cm_fs05{font-size:0.5em}
 <br />.cm_fs05中cm为cmui的前缀cm,
 <br />.cm_fs05中fs为font-size两个单词各自的首字母集合
