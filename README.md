@@ -1,5 +1,5 @@
 # cmui
-cmui超萌框架,快速布局
+cmui超萌框架,快捷布局
 <br />官方网站 aiplat.com
 <br />cmui包含cmreset.css和cmstyle.css两个css文件
 <br /><br />
@@ -8,7 +8,7 @@ cmui超萌框架,快速布局
 <br />2,样式中添加了bootstrap中的栅格布局，为了方便适应使用bootstrap前端开发者
 <br />3,使用bootstrap部分如:container、container-fluid、row、col-xs-num、col-sm-num、col-md-num、col-lg-num,均有修改
 <br /><br />
-<b>cmstyle.css说明</b>
+#cmstyle.css说明
 <br /><br />1,使用em相对单位,cmreset.css中同为em
 <br />宽高或长度厚度较小时部分单位使用px,如.cm_bb1e{border-bottom:1px solid #eee}
 <br />2,\<span class="cm_fs05"\>cmui\<\/span\>
