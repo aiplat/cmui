@@ -1,6 +1,7 @@
 # cmui
-超萌UI框架,快速布局<b>注意</b>
+cmui超萌框架,快速布局
 <br />官方网站 aiplat.com
+<br />cmui包含cmreset.css和cmstyle.css两个css文件
 <br /><br />
 <b>cmreset.css说明</b>
 <br /><br />1,盒模型采用IE盒子，即css3中的box-sizing值为border-box
@@ -20,4 +21,6 @@
 <b>注意</b>
 <br /><br />1,请在html文件中添加meta如下:
 <br />\<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no"\>
+<br />2,以上两个css文件的说明文档还有很多未写,后续完善,多谢支持与赞.
+
 
