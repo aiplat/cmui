@@ -14,7 +14,7 @@ cmui超萌框架,快速布局
 <br />2,\<span class="cm_fs05"\>cmui\<\/span\>
 <br />意思cmui字体大小对应.cm_fs05{font-size:0.5em}
 <br />.cm_fs05中cm为cmui的前缀cm,
-<br />.cm_fs05中fs为font-size两个单词各自的首字母集合
+<br />.cm_fs05中fs为font-size两个单词各自的首字母集合,所有类命名均类似
 <br />.cm_fs05中05为0.5em大小,em为如上1说明
 <br />.cm_fs06.....cm_fs3--06、07、08、09、1、11、12、13、15，2，3雷同 .cm_fs3{font-size:3em}
 <br /><br />
