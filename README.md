@@ -5,8 +5,6 @@ cmui超萌框架,快捷布局
 <br /><br />
 <b>cmreset.css说明</b>
 <br /><br />1,盒模型采用IE盒子，即css3中的box-sizing值为border-box
-<br />2,样式中添加了bootstrap中的栅格布局，为了方便适应使用bootstrap前端开发者
-<br />3,使用bootstrap部分如:container、container-fluid、row、col-xs-num、col-sm-num、col-md-num、col-lg-num,均有修改
 <br /><br />
 <b>cmstyle.css说明</b>
 <br /><br />1,使用em相对单位,cmreset.css中同为em
