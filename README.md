@@ -16,6 +16,9 @@ cmui超萌框架,快捷布局
 <br />.cm_fs05中05为0.5em大小,em为如上1说明
 <br />.cm_fs06.....cm_fs3--06、07、08、09、1、11、12、13、15，2，3雷同 .cm_fs3{font-size:3em}
 <br /><br />
+<b>兼容性</b>
+<br /><br />1,实测兼容ie8
+<br />2,兼容手机、电脑、平板等等一切联网设备
 <b>注意</b>
 <br /><br />1,请在html文件中添加meta如下:
 <br />\<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no"\>
