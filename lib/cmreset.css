@@ -1,8 +1,7 @@
 /*
 -----------------------------------------------------------------
     *修 改 人：梁超明 womendi@qq.com
-    *git仓库 : https://github.com/womendi/cmui.git
-    *最近修改：2018.01.11
+    *最近修改：2018.02.07
 -----------------------------------------------------------------
 */
 html {
@@ -57,76 +56,22 @@ footer,
 header,
 hgroup,
 nav,
-section {
+section,
+view {
   margin: 0;
   padding: 0;
   border: 0;
   font: inherit;
   vertical-align: baseline;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-dialog,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
   background: #fff;
   font-family: 'Microsoft YaHei';
   word-break: break-all;
   word-wrap: break-word;
-}
-img {
-  border: 0;
-  vertical-align: bottom;
-}
-::-webkit-input-placeholder {
-  color: #ccc;
-}
-:-moz-placeholder {
-  color: #ccc;
-}
-::-moz-placeholder {
-  color: #ccc;
-}
-:-ms-input-placeholder {
-  color: #ccc;
-}
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-textarea {
-  overflow: auto;
-}
-input:focus,
-textarea:focus,
-button:focus,
-select:focus {
-  outline: none;
-}
-input::-ms-clear {
-  display: none;
 }
 article,
 aside,
@@ -156,16 +101,6 @@ audio:not([controls]) {
 [hidden],
 template {
   display: none;
-}
-a:active,
-a:hover {
-  outline: 0;
-}
-a:focus {
-  border: none;
-}
-a {
-  color: #000000;
 }
 abbr[title] {
   border-bottom: 1px dotted;
@@ -225,6 +160,9 @@ select,
 textarea {
   margin: 0;
   font: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 button {
   overflow: visible;
@@ -248,6 +186,57 @@ button::-moz-focus-inner,
 input::-moz-focus-inner {
   padding: 0;
   border: 0;
+}
+.button {
+  border: solid 1px #eee;
+  background: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 6px 15px;
+  margin: 0;
+  display: inline-block;
+  line-height: 20px;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1) 0s;
+}
+.button[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  webkit-box-shadow: none;
+  box-shadow: none;
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.button:active {
+  background-image: none;
+  outline: 0;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1) 0s;
+}
+.button:hover {
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1) 0s;
+}
+::-webkit-input-placeholder {
+  color: #ccc;
+}
+:-moz-placeholder {
+  color: #ccc;
+}
+::-moz-placeholder {
+  color: #ccc;
+}
+:-ms-input-placeholder {
+  color: #ccc;
+}
+textarea {
+  overflow: auto;
+}
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+  outline: none;
+}
+input::-ms-clear {
+  display: none;
 }
 input[type='checkbox'],
 input[type='radio'] {
@@ -287,33 +276,6 @@ table {
 td,
 th {
   padding: 0;
-}
-.button {
-  border: solid 1px #eee;
-  background: transparent;
-  border-radius: 4px;
-  font-size: 14px;
-  padding: 6px 15px;
-  margin: 0;
-  display: inline-block;
-  line-height: 20px;
-  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1) 0s;
-}
-.button[disabled] {
-  pointer-events: none;
-  cursor: not-allowed;
-  webkit-box-shadow: none;
-  box-shadow: none;
-  filter: alpha(opacity=50);
-  opacity: .5;
-}
-.button:active {
-  background-image: none;
-  outline: 0;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1) 0s;
-}
-.button:hover {
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1) 0s;
 }
 body,
 h1,
@@ -366,16 +328,17 @@ ol {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: #000000;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+a:focus {
+  border: none;
 }
 a:hover {
   text-decoration: none;
-}
-img {
-  border: 0px;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 iframe {
   border: none;
@@ -387,6 +350,10 @@ p {
 }
 p img {
   width: 100%;
+}
+img {
+  border: 0;
+  vertical-align: bottom;
 }
 label {
   margin: 0!important;
