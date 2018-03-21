@@ -1,7 +1,7 @@
 # cmui
 cmui超萌框架,快捷布局
 <br />官方网站 aiplat.com
-<br />cmui包含cmreset.css和cmstyle.css两个css文件
+<br />cmui包含cmreset.css和cmstyle.css，aiplat.css三个css文件，同时生成可用于微信小程序开发的wxss文件
 <br /><br />
 <b>cmreset.css说明</b>
 <br /><br />1,盒模型采用IE盒子，即css3中的box-sizing值为border-box
