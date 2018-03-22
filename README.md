@@ -1,6 +1,7 @@
 # cmui
 cmui超萌框架,快捷布局
-<br />官方网站 aiplat.com
+<br />实例网站1 http://www.aiplat.com
+<br />实例网站2 http://m.aiplat.com/metro
 <br />cmui包含cmreset.css和cmstyle.css、aiplat.css三个css文件，同时生成可用于微信小程序开发的wxss文件
 <br /><br />
 <b>cmreset.css说明</b>
