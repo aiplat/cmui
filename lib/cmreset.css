@@ -57,6 +57,11 @@ header,
 hgroup,
 nav,
 section,
+button,
+input,
+optgroup,
+select,
+textarea,
 view {
   margin: 0;
   padding: 0;
@@ -153,17 +158,6 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
-button,
-input,
-optgroup,
-select,
-textarea {
-  margin: 0;
-  font: inherit;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 button {
   overflow: visible;
 }
@@ -186,33 +180,6 @@ button::-moz-focus-inner,
 input::-moz-focus-inner {
   padding: 0;
   border: 0;
-}
-.button {
-  border: solid 1px #eee;
-  background: transparent;
-  border-radius: 4px;
-  font-size: 14px;
-  padding: 6px 15px;
-  margin: 0;
-  display: inline-block;
-  line-height: 20px;
-  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1) 0s;
-}
-.button[disabled] {
-  pointer-events: none;
-  cursor: not-allowed;
-  webkit-box-shadow: none;
-  box-shadow: none;
-  filter: alpha(opacity=50);
-  opacity: .5;
-}
-.button:active {
-  background-image: none;
-  outline: 0;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1) 0s;
-}
-.button:hover {
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1) 0s;
 }
 ::-webkit-input-placeholder {
   color: #ccc;
