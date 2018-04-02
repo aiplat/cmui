@@ -124,73 +124,16 @@ img[lazy=error] {
   background: #ffffff;
   bottom: 0;
 }
-.cm_c1b {
-  background: #fd1414 !important;
-}
-.cm_c1c {
-  color: #fd1414 !important;
-}
-/*c1*/
-.cm_c2b {
-  background: #000000 !important;
-}
-.cm_c2c {
-  color: #000000 !important;
-}
-/*c2*/
-.cm_c3b {
-  background: #696867 !important;
-}
-.cm_c3c {
-  color: #696867 !important;
-}
-/*c3*/
-.cm_c4b {
-  background: #9b9b9b !important;
-}
-.cm_c4c {
-  color: #9b9b9b !important;
-}
-/*c4*/
-.cm_c5b {
-  background: #dfddda !important;
-}
-.cm_c5c {
-  color: #dfddda !important;
-}
-/*c5*/
-.cm_c6b {
-  background: #efefee !important;
-}
-.cm_c6c {
-  color: #efefee !important;
-}
-/*c6*/
-.cm_c7b {
-  background: #ffffff !important;
-}
-.cm_c7c {
-  color: #ffffff !important;
-}
-/*c7*/
-.cm_c8b {
-  background: #ec353a !important;
-}
-.cm_c8c {
-  color: #ec353a !important;
-}
-/*c8*/
-.cm_c9b {
-  background: #ff8200 !important;
-}
-.cm_c9c {
-  color: #ff8200 !important;
-}
-/*c9*/
 .cm_bddd {
   background: #ddd !important;
 }
 .cm_blhide {
   bottom: -99999px !important;
   left: -99999px !important;
+}
+.cm_c01b {
+  background: #1aad19 !important;
+}
+.cm_c01c {
+  color: #1aad19 !important;
 }

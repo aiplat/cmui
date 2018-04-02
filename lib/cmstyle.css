@@ -11,16 +11,16 @@
     修改描述：less打包
 */
 .cm_c1c {
-  color: #dfb979 !important;
+  color: #fd1414 !important;
 }
 .cm_c2c {
   color: #de4a4a !important;
 }
 .cm_c3c {
-  color: #ff4040 !important;
+  color: #696867 !important;
 }
 .cm_c4c {
-  color: #666666 !important;
+  color: #9b9b9b !important;
 }
 .cm_c5c {
   color: #999999 !important;
@@ -56,16 +56,16 @@
   color: #0000ff !important;
 }
 .cm_c1b {
-  background: #dfb979 !important;
+  background: #fd1414 !important;
 }
 .cm_c2b {
   background: #de4a4a !important;
 }
 .cm_c3b {
-  background: #ff4040 !important;
+  background: #696867 !important;
 }
 .cm_c4b {
-  background: #666666 !important;
+  background: #9b9b9b !important;
 }
 .cm_c5b {
   background: #999999 !important;
@@ -131,16 +131,16 @@
   background: rgba(0, 0, 0, 0.5) !important;
 }
 .cm_ac1c a {
-  color: #dfb979 !important;
+  color: #fd1414 !important;
 }
 .cm_ac2c a {
   color: #de4a4a !important;
 }
 .cm_ac3c a {
-  color: #ff4040 !important;
+  color: #696867 !important;
 }
 .cm_ac4c a {
-  color: #666666 !important;
+  color: #9b9b9b !important;
 }
 .cm_ac5c a {
   color: #999999 !important;
@@ -161,16 +161,16 @@
   color: #ffffff !important;
 }
 .cm_hvc1c:hover {
-  color: #dfb979 !important;
+  color: #fd1414 !important;
 }
 .cm_hvc2c:hover {
   color: #de4a4a !important;
 }
 .cm_hvc3c:hover {
-  color: #ff4040 !important;
+  color: #696867 !important;
 }
 .cm_hvc4c:hover {
-  color: #666666 !important;
+  color: #9b9b9b !important;
 }
 .cm_hvc5c:hover {
   color: #999999 !important;
@@ -191,16 +191,16 @@
   color: #ffffff !important;
 }
 .cm_hvc1b:hover {
-  background: #dfb979 !important;
+  background: #fd1414 !important;
 }
 .cm_hvc2b:hover {
   background: #de4a4a !important;
 }
 .cm_hvc3b:hover {
-  background: #ff4040 !important;
+  background: #696867 !important;
 }
 .cm_hvc4b:hover {
-  background: #666666 !important;
+  background: #9b9b9b !important;
 }
 .cm_hvc5b:hover {
   background: #999999 !important;
@@ -2232,16 +2232,16 @@
   border: 0 !important;
 }
 .cm_b1c1 {
-  border: 1px solid #dfb979 !important;
+  border: 1px solid #fd1414 !important;
 }
 .cm_b1c2 {
   border: 1px solid #de4a4a !important;
 }
 .cm_b1c3 {
-  border: 1px solid #ff4040 !important;
+  border: 1px solid #696867 !important;
 }
 .cm_b1c4 {
-  border: 1px solid #666666 !important;
+  border: 1px solid #9b9b9b !important;
 }
 .cm_b1c5 {
   border: 1px solid #999999 !important;
@@ -2268,16 +2268,16 @@
   border: 1px solid #ffffff !important;
 }
 .cm_b2c1 {
-  border: 2px solid #dfb979 !important;
+  border: 2px solid #fd1414 !important;
 }
 .cm_b2c2 {
   border: 2px solid #de4a4a !important;
 }
 .cm_b2c3 {
-  border: 2px solid #ff4040 !important;
+  border: 2px solid #696867 !important;
 }
 .cm_b2c4 {
-  border: 2px solid #666666 !important;
+  border: 2px solid #9b9b9b !important;
 }
 .cm_b2c5 {
   border: 2px solid #999999 !important;
@@ -2298,16 +2298,16 @@
   border: 2px solid #ffffff !important;
 }
 .cm_b3c1 {
-  border: 3px solid #dfb979 !important;
+  border: 3px solid #fd1414 !important;
 }
 .cm_b3c2 {
   border: 3px solid #de4a4a !important;
 }
 .cm_b3c3 {
-  border: 3px solid #ff4040 !important;
+  border: 3px solid #696867 !important;
 }
 .cm_b3c4 {
-  border: 3px solid #666666 !important;
+  border: 3px solid #9b9b9b !important;
 }
 .cm_b3c5 {
   border: 3px solid #999999 !important;
@@ -2328,16 +2328,16 @@
   border: 3px solid #ffffff !important;
 }
 .cm_bt1c1 {
-  border-top: 1px solid #dfb979 !important;
+  border-top: 1px solid #fd1414 !important;
 }
 .cm_bt1c2 {
   border-top: 1px solid #de4a4a !important;
 }
 .cm_bt1c3 {
-  border-top: 1px solid #ff4040 !important;
+  border-top: 1px solid #696867 !important;
 }
 .cm_bt1c4 {
-  border-top: 1px solid #666666 !important;
+  border-top: 1px solid #9b9b9b !important;
 }
 .cm_bt1c5 {
   border-top: 1px solid #999999 !important;
@@ -2364,16 +2364,16 @@
   border-top: 1px solid #ffffff !important;
 }
 .cm_bt2c1 {
-  border-top: 2px solid #dfb979 !important;
+  border-top: 2px solid #fd1414 !important;
 }
 .cm_bt2c2 {
   border-top: 2px solid #de4a4a !important;
 }
 .cm_bt2c3 {
-  border-top: 2px solid #ff4040 !important;
+  border-top: 2px solid #696867 !important;
 }
 .cm_bt2c4 {
-  border-top: 2px solid #666666 !important;
+  border-top: 2px solid #9b9b9b !important;
 }
 .cm_bt2c5 {
   border-top: 2px solid #999999 !important;
@@ -2394,16 +2394,16 @@
   border-top: 2px solid #ffffff !important;
 }
 .cm_bt3c1 {
-  border-top: 3px solid #dfb979 !important;
+  border-top: 3px solid #fd1414 !important;
 }
 .cm_bt3c2 {
   border-top: 3px solid #de4a4a !important;
 }
 .cm_bt3c3 {
-  border-top: 3px solid #ff4040 !important;
+  border-top: 3px solid #696867 !important;
 }
 .cm_bt3c4 {
-  border-top: 3px solid #666666 !important;
+  border-top: 3px solid #9b9b9b !important;
 }
 .cm_bt3c5 {
   border-top: 3px solid #999999 !important;
@@ -2424,19 +2424,19 @@
   border-top: 3px solid #ffffff !important;
 }
 .cm_bb1c1 {
-  border-bottom: 1px solid #dfb979 !important;
+  border-bottom: 1px solid #fd1414 !important;
 }
 .cm_bb1c1d {
-  border-bottom: 1px dashed #dfb979 !important;
+  border-bottom: 1px dashed #fd1414 !important;
 }
 .cm_bb1c2 {
   border-bottom: 1px solid #de4a4a !important;
 }
 .cm_bb1c3 {
-  border-bottom: 1px solid #ff4040 !important;
+  border-bottom: 1px solid #696867 !important;
 }
 .cm_bb1c4 {
-  border-bottom: 1px solid #666666 !important;
+  border-bottom: 1px solid #9b9b9b !important;
 }
 .cm_bb1c5 {
   border-bottom: 1px solid #999999 !important;
@@ -2463,16 +2463,16 @@
   border-bottom: 2px solid #ffffff !important;
 }
 .cm_bb2c1 {
-  border-bottom: 2px solid #dfb979 !important;
+  border-bottom: 2px solid #fd1414 !important;
 }
 .cm_bb2c2 {
   border-bottom: 2px solid #de4a4a !important;
 }
 .cm_bb2c3 {
-  border-bottom: 2px solid #ff4040 !important;
+  border-bottom: 2px solid #696867 !important;
 }
 .cm_bb2c4 {
-  border-bottom: 2px solid #666666 !important;
+  border-bottom: 2px solid #9b9b9b !important;
 }
 .cm_bb2c5 {
   border-bottom: 2px solid #999999 !important;
@@ -2499,16 +2499,16 @@
   border-bottom: 2px solid #ffffff !important;
 }
 .cm_bb3c1 {
-  border-bottom: 3px solid #dfb979 !important;
+  border-bottom: 3px solid #fd1414 !important;
 }
 .cm_bb3c2 {
   border-bottom: 3px solid #de4a4a !important;
 }
 .cm_bb3c3 {
-  border-bottom: 3px solid #ff4040 !important;
+  border-bottom: 3px solid #696867 !important;
 }
 .cm_bb3c4 {
-  border-bottom: 3px solid #666666 !important;
+  border-bottom: 3px solid #9b9b9b !important;
 }
 .cm_bb3c5 {
   border-bottom: 3px solid #999999 !important;
@@ -2535,16 +2535,16 @@
   border-bottom: 3px solid #ffffff !important;
 }
 .cm_bl1c1 {
-  border-left: 1px solid #dfb979 !important;
+  border-left: 1px solid #fd1414 !important;
 }
 .cm_bl1c2 {
   border-left: 1px solid #de4a4a !important;
 }
 .cm_bl1c3 {
-  border-left: 1px solid #ff4040 !important;
+  border-left: 1px solid #696867 !important;
 }
 .cm_bl1c4 {
-  border-left: 1px solid #666666 !important;
+  border-left: 1px solid #9b9b9b !important;
 }
 .cm_bl1c5 {
   border-left: 1px solid #999999 !important;
@@ -2571,16 +2571,16 @@
   border-left: 1px solid #ffffff !important;
 }
 .cm_bl2c1 {
-  border-left: 2px solid #dfb979 !important;
+  border-left: 2px solid #fd1414 !important;
 }
 .cm_bl2c2 {
   border-left: 2px solid #de4a4a !important;
 }
 .cm_bl2c3 {
-  border-left: 2px solid #ff4040 !important;
+  border-left: 2px solid #696867 !important;
 }
 .cm_bl2c4 {
-  border-left: 2px solid #666666 !important;
+  border-left: 2px solid #9b9b9b !important;
 }
 .cm_bl2c5 {
   border-left: 2px solid #999999 !important;
@@ -2607,16 +2607,16 @@
   border-left: 2px solid #ffffff !important;
 }
 .cm_bl3c1 {
-  border-left: 3px solid #dfb979 !important;
+  border-left: 3px solid #fd1414 !important;
 }
 .cm_bl3c2 {
   border-left: 3px solid #de4a4a !important;
 }
 .cm_bl3c3 {
-  border-left: 3px solid #ff4040 !important;
+  border-left: 3px solid #696867 !important;
 }
 .cm_bl3c4 {
-  border-left: 3px solid #666666 !important;
+  border-left: 3px solid #9b9b9b !important;
 }
 .cm_bl3c5 {
   border-left: 3px solid #999999 !important;
@@ -2643,16 +2643,16 @@
   border-left: 3px solid #ffffff !important;
 }
 .cm_br1c1 {
-  border-right: 1px solid #dfb979 !important;
+  border-right: 1px solid #fd1414 !important;
 }
 .cm_br1c2 {
   border-right: 1px solid #de4a4a !important;
 }
 .cm_br1c3 {
-  border-right: 1px solid #ff4040 !important;
+  border-right: 1px solid #696867 !important;
 }
 .cm_br1c4 {
-  border-right: 1px solid #666666 !important;
+  border-right: 1px solid #9b9b9b !important;
 }
 .cm_br1c5 {
   border-right: 1px solid #999999 !important;
@@ -2679,16 +2679,16 @@
   border-right: 1px solid #ffffff !important;
 }
 .cm_br2c1 {
-  border-right: 2px solid #dfb979 !important;
+  border-right: 2px solid #fd1414 !important;
 }
 .cm_br2c2 {
   border-right: 2px solid #de4a4a !important;
 }
 .cm_br2c3 {
-  border-right: 2px solid #ff4040 !important;
+  border-right: 2px solid #696867 !important;
 }
 .cm_br2c4 {
-  border-right: 2px solid #666666 !important;
+  border-right: 2px solid #9b9b9b !important;
 }
 .cm_br2c5 {
   border-right: 2px solid #999999 !important;
@@ -2715,16 +2715,16 @@
   border-right: 2px solid #ffffff !important;
 }
 .cm_br3c1 {
-  border-right: 3px solid #dfb979 !important;
+  border-right: 3px solid #fd1414 !important;
 }
 .cm_br3c2 {
   border-right: 3px solid #de4a4a !important;
 }
 .cm_br3c3 {
-  border-right: 3px solid #ff4040 !important;
+  border-right: 3px solid #696867 !important;
 }
 .cm_br3c4 {
-  border-right: 3px solid #666666 !important;
+  border-right: 3px solid #9b9b9b !important;
 }
 .cm_br3c5 {
   border-right: 3px solid #999999 !important;
@@ -2979,10 +2979,10 @@
   border-bottom-left-radius: 1em;
 }
 .cm_bs01c1 {
-  -webkit-box-shadow: 0.1em 0.1em 0.1em #dfb979;
-  -moz-box-shadow: 0.1em 0.1em 0.1em #dfb979;
-  -ms-box-shadow: 0.1em 0.1em 0.1em #dfb979;
-  box-shadow: 0.1em 0.1em 0.1em #dfb979;
+  -webkit-box-shadow: 0.1em 0.1em 0.1em #fd1414;
+  -moz-box-shadow: 0.1em 0.1em 0.1em #fd1414;
+  -ms-box-shadow: 0.1em 0.1em 0.1em #fd1414;
+  box-shadow: 0.1em 0.1em 0.1em #fd1414;
 }
 .cm_bs01c2 {
   -webkit-box-shadow: 0.1em 0.1em 0.1em #de4a4a;
@@ -2991,16 +2991,16 @@
   box-shadow: 0.1em 0.1em 0.1em #de4a4a;
 }
 .cm_bs01c3 {
-  -webkit-box-shadow: 0.1em 0.1em 0.1em #ff4040;
-  -moz-box-shadow: 0.1em 0.1em 0.1em #ff4040;
-  -ms-box-shadow: 0.1em 0.1em 0.1em #ff4040;
-  box-shadow: 0.1em 0.1em 0.1em #ff4040;
+  -webkit-box-shadow: 0.1em 0.1em 0.1em #696867;
+  -moz-box-shadow: 0.1em 0.1em 0.1em #696867;
+  -ms-box-shadow: 0.1em 0.1em 0.1em #696867;
+  box-shadow: 0.1em 0.1em 0.1em #696867;
 }
 .cm_bs01c4 {
-  -webkit-box-shadow: 0.1em 0.1em 0.1em #666666;
-  -moz-box-shadow: 0.1em 0.1em 0.1em #666666;
-  -ms-box-shadow: 0.1em 0.1em 0.1em #666666;
-  box-shadow: 0.1em 0.1em 0.1em #666666;
+  -webkit-box-shadow: 0.1em 0.1em 0.1em #9b9b9b;
+  -moz-box-shadow: 0.1em 0.1em 0.1em #9b9b9b;
+  -ms-box-shadow: 0.1em 0.1em 0.1em #9b9b9b;
+  box-shadow: 0.1em 0.1em 0.1em #9b9b9b;
 }
 .cm_bs01c5 {
   -webkit-box-shadow: 0.1em 0.1em 0.1em #999999;
@@ -3051,10 +3051,10 @@
   box-shadow: 0.1em 0.1em 0.1em #ffffff;
 }
 .cm_bs02c1 {
-  -webkit-box-shadow: 0.2em 0.2em 0.2em #dfb979;
-  -moz-box-shadow: 0.2em 0.2em 0.2em #dfb979;
-  -ms-box-shadow: 0.2em 0.2em 0.2em #dfb979;
-  box-shadow: 0.2em 0.2em 0.2em #dfb979;
+  -webkit-box-shadow: 0.2em 0.2em 0.2em #fd1414;
+  -moz-box-shadow: 0.2em 0.2em 0.2em #fd1414;
+  -ms-box-shadow: 0.2em 0.2em 0.2em #fd1414;
+  box-shadow: 0.2em 0.2em 0.2em #fd1414;
 }
 .cm_bs02c2 {
   -webkit-box-shadow: 0.2em 0.2em 0.2em #de4a4a;
@@ -3063,16 +3063,16 @@
   box-shadow: 0.2em 0.2em 0.2em #de4a4a;
 }
 .cm_bs02c3 {
-  -webkit-box-shadow: 0.2em 0.2em 0.2em #ff4040;
-  -moz-box-shadow: 0.2em 0.2em 0.2em #ff4040;
-  -ms-box-shadow: 0.2em 0.2em 0.2em #ff4040;
-  box-shadow: 0.2em 0.2em 0.2em #ff4040;
+  -webkit-box-shadow: 0.2em 0.2em 0.2em #696867;
+  -moz-box-shadow: 0.2em 0.2em 0.2em #696867;
+  -ms-box-shadow: 0.2em 0.2em 0.2em #696867;
+  box-shadow: 0.2em 0.2em 0.2em #696867;
 }
 .cm_bs02c4 {
-  -webkit-box-shadow: 0.2em 0.2em 0.2em #666666;
-  -moz-box-shadow: 0.2em 0.2em 0.2em #666666;
-  -ms-box-shadow: 0.2em 0.2em 0.2em #666666;
-  box-shadow: 0.2em 0.2em 0.2em #666666;
+  -webkit-box-shadow: 0.2em 0.2em 0.2em #9b9b9b;
+  -moz-box-shadow: 0.2em 0.2em 0.2em #9b9b9b;
+  -ms-box-shadow: 0.2em 0.2em 0.2em #9b9b9b;
+  box-shadow: 0.2em 0.2em 0.2em #9b9b9b;
 }
 .cm_bs02c5 {
   -webkit-box-shadow: 0.2em 0.2em 0.2em #999999;
