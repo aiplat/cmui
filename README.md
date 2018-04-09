@@ -24,8 +24,3 @@ cmui超萌框架,快捷布局
 <b>兼容性</b>
 <br /><br />1,实测兼容ie8
 <br />2,兼容手机、电脑、平板等等一切联网设备
-<br /><br />
-<b>注意</b>
-<br /><br />1,请在html文件中添加meta如下:
-<br /><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no"\>
-<br />2,以上三个css文件的说明文档还有很多未写,后续完善,多谢支持与赞.
