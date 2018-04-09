@@ -1,7 +1,8 @@
 # cmui
-##自己写的布局框架，自适应跨平台设备
-<br />
 cmui超萌框架,快捷布局
+<br />
+<b>自己写的布局框架，自适应跨平台设备</b>
+<br /><br />
 <br />实例网站1 http://www.aiplat.com
 <br />实例网站2 http://m.aiplat.com/metro
 <br />cmui包含cmreset.css和cmstyle.css、aiplat.css三个css文件，同时生成可用于微信小程序开发的wxss文件
@@ -18,6 +19,7 @@ cmui超萌框架,快捷布局
 <br />.cm_fs05中fs为font-size两个单词各自的首字母集合,所有类命名均类似
 <br />.cm_fs05中05为0.5em大小,em为如上1说明
 <br />.cm_fs06.....cm_fs3--06、07、08、09、1、11、12、13、15，2，3雷同 .cm_fs3{font-size:3em}
+<br /><br />3,以上三个css文件的说明文档还有很多未写,后续完善,多谢支持与赞.
 <br /><br />
 <b>兼容性</b>
 <br /><br />1,实测兼容ie8
@@ -27,5 +29,3 @@ cmui超萌框架,快捷布局
 <br /><br />1,请在html文件中添加meta如下:
 <br /><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no"\>
 <br />2,以上三个css文件的说明文档还有很多未写,后续完善,多谢支持与赞.
-
-
