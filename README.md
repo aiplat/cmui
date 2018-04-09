@@ -1,4 +1,6 @@
 # cmui
+##自己写的布局框架，自适应跨平台设备
+<br />
 cmui超萌框架,快捷布局
 <br />实例网站1 http://www.aiplat.com
 <br />实例网站2 http://m.aiplat.com/metro
