@@ -16,16 +16,17 @@ cmui超萌框架,快捷布局
 <br />请在此文件搜索 ‘栅格系统’
 <br />兼容pc与mobile写法:(pc端以1200px居中，mobile以100%适配)
 <br />\<div class="cm_main2"\>
-          \<div class="cm_main"\>
-              \<ul class="cm_pc_12"\>
-                  \<li class="cm_pc_12 cm_mob_6"\>显示主体div\<\/li\>
-                  \<li class="cm_pc_12 cm_mob_6"\>显示主体div\<\/li\>
-                  \<li class="cm_pc_4 cm_mob_12"\>显示主体div\<\/li\>
-                  \<li class="cm_pc_4 cm_mob_12"\>显示主体div\<\/li\>
-                  \<li class="cm_pc_4 cm_mob_12"\>显示主体div\<\/li\>
-              \<\/ul\>
-          \<\/div\>
-     \<\/div\>
+<br />    \<div class="cm_main"\>
+<br />         \<ul class="cm_pc_12"\>
+<br />            \<li class="cm_pc_12 cm_mob_6"\>显示主体div\<\/li\>
+<br />            \<li class="cm_pc_12 cm_mob_6"\>显示主体div\<\/li\>
+<br />            \<li class="cm_pc_4 cm_mob_12"\>显示主体div\<\/li\>
+<br />            \<li class="cm_pc_4 cm_mob_12"\>显示主体div\<\/li\>
+<br />            \<li class="cm_pc_4 cm_mob_12"\>显示主体div\<\/li\>
+<br />         \<\/ul\>
+<br />    \<\/div\>
+<br />\<\/div\>
+
 <br /><br />2,使用em相对单位,cmreset.css中同为em
 <br />宽高或长度厚度较小时部分单位使用px,如.cm_bb1e{border-bottom:1px solid #eee}
 <br />3,\<span class="cm_fs05"\>cmui\<\/span\>
