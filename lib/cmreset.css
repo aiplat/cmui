@@ -283,7 +283,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 100%;
+  font-size: 1em;
 }
 em {
   font-style: normal;
