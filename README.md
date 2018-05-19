@@ -9,7 +9,6 @@ cmui超萌框架,快捷布局
 <br /><br />
 <b>cmreset.css说明</b>
 <br /><br />1,盒模型采用IE盒子，即css3中的box-sizing值为border-box
-<br /><br />2,div单位主要为em(优于rem)，其他部分如border小尺寸单位为px
 <br /><br />
 <b>cmstyle.css说明</b>
 <br /><br />1,栅格系统
@@ -26,8 +25,8 @@ cmui超萌框架,快捷布局
 <br />         \<\/ul\>
 <br />    \<\/div\>
 <br />\<\/div\>
-<br /><br />2,使用em相对单位,cmreset.css中同为em
-<br />宽高或长度厚度较小时部分单位使用px,如.cm_bb1e{border-bottom:1px solid #eee}
+<br /><br />2,div单位主要为em(优于rem)，其他部分如border小尺寸单位为px
+<br />宽高或长度厚度较小时部分单位使用px,如.cm_bb1ce{border-bottom:1px solid #eeeeee}
 <br /><br />3,\<span class="cm_fs05"\>cmui\<\/span\>
 <br />意思cmui字体大小对应.cm_fs05{font-size:0.5em}
 <br />.cm_fs05中cm为cmui的前缀cm,
@@ -39,3 +38,4 @@ cmui超萌框架,快捷布局
 <b>兼容性</b>
 <br /><br />1,实测兼容ie8
 <br />2,兼容手机、电脑、平板等等一切联网设备
+<br />3,一次布局，适配所有平台
