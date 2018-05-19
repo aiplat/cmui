@@ -4,9 +4,7 @@
   "description": "aiplat.com",
   "author": "aiplat.com",
   "private": true,
-  "scripts": {
-    "build": "webpack"
-  },
+  "scripts": {},
   "dependencies": {},
   "devDependencies": {
     "less": "^2.7.3",
