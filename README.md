@@ -3,21 +3,29 @@ cmui超萌框架,快捷布局
 <br />
 <b>自己写的布局框架，自适应跨平台设备</b>
 <br /><br />
-<br />实例网站1 http://www.aiplat.com
-<br />实例网站2 http://m.aiplat.com/metro
+<br />实例网站1 AI智能空间 http://www.aiplat.com
+<br />实例网站2 亲信地铁 http://m.aiplat.com/metro
 <br />cmui包含cmreset.css和cmstyle.css、aiplat.css三个css文件，同时生成可用于微信小程序开发的wxss文件
 <br /><br />
 <b>cmreset.css说明</b>
 <br /><br />1,盒模型采用IE盒子，即css3中的box-sizing值为border-box
+<br /><br />2,div单位主要为em(优于rem)，其他部分如border小尺寸单位为px
 <br /><br />
 <b>cmstyle.css说明</b>
 <br /><br />1,栅格系统
 <br />请在此文件搜索 ‘栅格系统’
 <br />兼容pc与mobile写法:(pc端以1200px居中，mobile以100%适配)
 <br />\<div class="cm_main2"\>
-          \<div class="cm_main"\>显示主体div\<\/div\>
+          \<div class="cm_main"\>
+              \<ul class="cm_pc_12"\>
+                  \<li class="cm_pc_12 cm_mob_6"\>显示主体div\<\/li\>
+                  \<li class="cm_pc_12 cm_mob_6"\>显示主体div\<\/li\>
+                  \<li class="cm_pc_4 cm_mob_12"\>显示主体div\<\/li\>
+                  \<li class="cm_pc_4 cm_mob_12"\>显示主体div\<\/li\>
+                  \<li class="cm_pc_4 cm_mob_12"\>显示主体div\<\/li\>
+              \<\/ul\>
+          \<\/div\>
      \<\/div\>
-
 <br /><br />2,使用em相对单位,cmreset.css中同为em
 <br />宽高或长度厚度较小时部分单位使用px,如.cm_bb1e{border-bottom:1px solid #eee}
 <br />3,\<span class="cm_fs05"\>cmui\<\/span\>
