@@ -11,9 +11,16 @@ cmui超萌框架,快捷布局
 <br /><br />1,盒模型采用IE盒子，即css3中的box-sizing值为border-box
 <br /><br />
 <b>cmstyle.css说明</b>
-<br /><br />1,使用em相对单位,cmreset.css中同为em
+<br /><br />1,栅格系统
+<br />请在此文件搜索 ‘栅格系统’
+<br />兼容pc与mobile写法:(pc端以1200px居中，mobile以100%适配)
+<br />\<div class="cm_main2"\>
+          \<div class="cm_main"\>显示主体div\<\/div\>
+     \<\/div\>
+
+<br /><br />2,使用em相对单位,cmreset.css中同为em
 <br />宽高或长度厚度较小时部分单位使用px,如.cm_bb1e{border-bottom:1px solid #eee}
-<br />2,\<span class="cm_fs05"\>cmui\<\/span\>
+<br />3,\<span class="cm_fs05"\>cmui\<\/span\>
 <br />意思cmui字体大小对应.cm_fs05{font-size:0.5em}
 <br />.cm_fs05中cm为cmui的前缀cm,
 <br />.cm_fs05中fs为font-size两个单词各自的首字母集合,所有类命名均类似
