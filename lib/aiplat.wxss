@@ -1,6 +1,7 @@
 /*
 //修 改 人：梁超明 womendi@qq.com
 //aiplat.css
+//最近修改：2018.05.19
 */
 /*vue-lazyload*/
 img[lazy=loading] {
