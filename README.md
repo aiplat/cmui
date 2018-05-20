@@ -3,8 +3,9 @@ cmui超萌框架,快捷布局
 <br />
 <b>自己写的布局框架，自适应跨平台设备</b>
 <br /><br />
-<br />实例网站1 AI智能空间 http://www.aiplat.com
-<br />实例网站2 亲信地铁 http://m.aiplat.com/metro
+<br />实例1 webapp网站 AI智能空间 http://www.aiplat.com
+<br />实例2 跨平台app  亲信地铁   http://m.aiplat.com/metro
+<br />实例3 微信小程序 娱乐计分器
 <br />cmui包含cmreset.css和cmstyle.css、aiplat.css三个css文件，同时生成可用于微信小程序开发的wxss文件
 <br /><br />
 <b>cmreset.css说明</b>
@@ -26,7 +27,7 @@ cmui超萌框架,快捷布局
 <br />    \<\/div\>
 <br />\<\/div\>
 <br /><br />2,div单位主要为em(优于rem)，其他部分如border小尺寸单位为px
-<br />宽高或长度厚度较小时部分单位使用px,如.cm_bb1ce{border-bottom:1px solid #eeeeee}
+<br />例如: .cm_bb1ce{border-bottom:1px solid #eeeeee}
 <br /><br />3,\<span class="cm_fs05"\>cmui\<\/span\>
 <br />意思cmui字体大小对应.cm_fs05{font-size:0.5em}
 <br />.cm_fs05中cm为cmui的前缀cm,
