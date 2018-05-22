@@ -1,8 +1,7 @@
 # cmui
 cmui超萌框架,快捷布局
-<br />
-<b>自己写的布局框架，自适应跨平台设备</b>
-<b>可应用于web、app、小程序</b>
+<br /><b>自己写的布局框架，自适应跨平台设备</b>
+<br /><b>可应用于web、app、小程序</b>
 <br /><br />
 <br />实例1 webapp网站 AI智能空间 http://www.aiplat.com
 <br />实例2 跨平台app  亲信地铁 腾讯应用宝或苹果appstore搜索‘亲信地铁’、web访问http://m.aiplat.com/metro
