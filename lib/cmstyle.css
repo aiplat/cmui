@@ -4387,6 +4387,14 @@ label {
   animation-name: cm_r2l;
   animation-duration: 0.3s;
 }
+.cm_Wr2l04 {
+  animation-name: cm_r2l;
+  animation-duration: 0.4s;
+}
+.cm_Wr2l05 {
+  animation-name: cm_r2l;
+  animation-duration: 0.5s;
+}
 .cm_Wl2r01 {
   animation-name: cm_l2r;
   animation-duration: 0.1s;
@@ -4398,6 +4406,14 @@ label {
 .cm_Wl2r03 {
   animation-name: cm_l2r;
   animation-duration: 0.3s;
+}
+.cm_Wl2r04 {
+  animation-name: cm_l2r;
+  animation-duration: 0.4s;
+}
+.cm_Wl2r05 {
+  animation-name: cm_l2r;
+  animation-duration: 0.5s;
 }
 @-webkit-keyframes cm_o2o {
   0% {
@@ -4475,13 +4491,21 @@ label {
   animation-name: cm_o2o;
   animation-duration: 0.1s;
 }
-.cm_Wo2o03 {
+.cm_Wo2o02 {
   animation-name: cm_o2o;
   animation-duration: 0.2s;
 }
-.cm_Wo2o01 {
+.cm_Wo2o03 {
   animation-name: cm_o2o;
   animation-duration: 0.3s;
+}
+.cm_Wo2o04 {
+  animation-name: cm_o2o;
+  animation-duration: 0.4s;
+}
+.cm_Wo2o05 {
+  animation-name: cm_o2o;
+  animation-duration: 0.5s;
 }
 .cm_up {
   -webkit-transform: rotate(0deg);
