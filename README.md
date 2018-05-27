@@ -33,13 +33,14 @@
 <br />\<\/div\>
 
 ## 2,div单位主要为em(优于rem)，其他部分如border小尺寸单位为px
+ - 例如: .cm_wh2{width:2em;height:2em}  1em等于一个字的字体大小
  - 例如: .cm_bb1ce{border-bottom:1px solid #eeeeee}
 
 ## 3,\<span class="cm_fs05"\>cmui\<\/span\>
  - 意思cmui字体大小对应.cm_fs05{font-size:0.5em}
  - .cm_fs05中cm为cmui的前缀cm,
  - .cm_fs05中fs为font-size两个单词各自的首字母集合,所有类命名均类似
- - .cm_fs05中05为0.5em大小,em为如上1说明
+ - .cm_fs05中05为0.5em大小,em为如上2说明
  - .cm_fs06.....cm_fs3--06、07、08、09、1、11、12、13、15，2，3雷同 .cm_fs3{font-size:3em}
 
 ## 4,以上三个css文件的说明文档还有很多未写,后续完善,多谢支持与赞.
