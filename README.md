@@ -8,11 +8,12 @@
  - 实例3 微信小程序 娱乐计分器
 
  - cmui包含cmreset.css和cmstyle.css、aiplat.css三个css文件，同时生成可用于微信小程序开发的wxss文件
+ - 三个文件,gzip压缩后12k
 
 ---
 
 # cmreset.css说明
-<br /><br />1,盒模型采用IE盒子，即css3中的box-sizing值为border-box
+ - 1,盒模型采用IE盒子，即css3中的box-sizing值为border-box
 
 ---
 
