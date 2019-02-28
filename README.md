@@ -4,7 +4,7 @@
  - <b>可应用于web、app、小程序</b>
  - <b>下一版本将添加组件形式</b>
 
- - 实例1 webapp网站 AI智能空间 http://www.aiplat.com
+ - 实例1 webapp网站 AI智能空间 https://aiplat.com
  - 实例2 跨平台app  亲信地铁 腾讯应用宝或苹果appstore搜索‘亲信地铁’、web访问http://m.aiplat.com/metro
  - 实例3 微信小程序 娱乐计分器
 
@@ -53,3 +53,4 @@
  - 1,实测兼容ie8
  - 2,兼容手机、电脑、平板等等一切联网设备
  - 3,一次布局，适配所有平台
+ - 4,可应用于web、app、小程序
