@@ -4,7 +4,9 @@
   "description": "aiplat.com",
   "author": "aiplat.com",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "build": "node less.js"
+  },
   "dependencies": {},
   "devDependencies": {
     "less": "^2.7.3",

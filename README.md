@@ -54,3 +54,10 @@
  - 2,兼容手机、电脑、平板等等一切联网设备
  - 3,一次布局，适配所有平台
  - 4,可应用于web、app、小程序
+
+# 构建
+ - 1，$ git clone https://github.com/aiplat/cmui.git
+ - 2, $ npm install
+ - 3, 修改less目录下各文件
+ - 4, $ npm run build
+ - 5, 构建后的样式目录为lib

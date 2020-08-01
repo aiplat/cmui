@@ -1,0 +1,2177 @@
+/*
+    Copyright (C) 2014 梁超明 版权所有。 
+    文件名：cmstyle.css
+    文件功能描述：cmui框架 https://github.com/aiplat/cmui
+    
+    创 建 人：梁超明 womendi@qq.com
+    创建日期：2017.11.11
+    
+    修 改 人：梁超明 womendi@qq.com
+    最近修改：2019.02.28
+    修改描述：less打包
+*/
+//兼容各浏览器通用方法
+//前缀：webkit,moz,ms,无
+.func(@attr,@val){
+  -webkit-@{attr}:@val;
+  -moz-@{attr}:@val;
+  -ms-@{attr}:@val;
+  @{attr}:@val;
+}
+//前缀：webkit,无
+.func2(@attr,@val){
+    -webkit-@{attr}:@val;
+    @{attr}:@val;
+}
+//前缀：无
+.func3(@attr,@val){
+    @{attr}:@val;
+}
+//兼容各浏览器通用方法 
+
+// 公共变量
+@num_bf1:1%;//百分之一值
+@num_1:1;//1
+@num_fs:1em;//1em
+
+//颜色变量
+@c1:rgb(253,20,20);
+@c2:#de4a4a;
+@c3:rgb(105,104,103);
+@c4:rgb(155,155,155);
+@c5:#999999;
+@c6:#f6f6f6;
+@c7:#333333;
+@c0:#000000;
+@cc:#cccccc;
+@cd:#dddddd;
+@ce:#eeeeee;
+@cf:#ffffff;
+@cf00:#ff0000;
+@c0f0:#00ff00;
+@c00f:#0000ff;
+//颜色变量
+
+// 公共变量
+
+//颜色方法
+.func_c(@c){
+  color:@c!important;
+}
+.func_b(@c){
+  background:@c!important;
+}
+.func_b2(@a,@b,@c,@size){
+  background:rgba(@a,@b,@c,@size)!important;
+}
+//颜色方法
+
+//------------------------
+/*字体颜色 color*/ 
+.cm_c1c{
+  .func_c(@c1);
+}
+.cm_c2c{
+  .func_c(@c2);
+}
+.cm_c3c{
+  .func_c(@c3);
+}
+.cm_c4c{
+  .func_c(@c4);
+}
+.cm_c5c{
+  .func_c(@c5);
+}
+.cm_c6c{
+    .func_c(@c6);
+}
+.cm_c7c{
+    .func_c(@c7);
+}
+.cm_c0{
+    .func_c(@c0);
+}
+.cm_cc{
+    .func_c(@cc);
+}
+.cm_cd{
+    .func_c(@cd);
+}
+.cm_ce{
+    .func_c(@ce);
+}
+.cm_cf{
+    .func_c(@cf);
+}
+.cm_cf00{
+    .func_c(@cf00);
+}
+.cm_c0f0{
+    .func_c(@c0f0);
+}
+.cm_c00f{
+    .func_c(@c00f);
+}
+// 字体颜色 color
+/*背景颜色 background*/ 
+.cm_c1b{
+  .func_b(@c1);
+}
+.cm_c2b{
+  .func_b(@c2);
+}
+.cm_c3b{
+  .func_b(@c3);
+}
+.cm_c4b{
+  .func_b(@c4);
+}
+.cm_c5b{
+  .func_b(@c5);
+}
+.cm_c6b{
+    .func_b(@c6);
+}
+.cm_c7b{
+    .func_b(@c7);
+}
+.cm_b0{
+    .func_b(@c0);
+}
+.cm_bc{
+    .func_b(@cc);
+}
+.cm_bd{
+    .func_b(@cd);
+}
+.cm_be{
+    .func_b(@ce);
+}
+.cm_bf{
+    .func_b(@cf);
+}
+.cm_bf00{
+    .func_b(@cf00);
+}
+.cm_b0f0{
+    .func_b(@c0f0);
+}
+.cm_b00f{
+    .func_b(@c00f);
+}
+//背景颜色 background
+/*有透明度的背景颜色*/
+.cm_bco01{
+    .func_b2(0,0,0,0.1);
+}
+.cm_bco02{
+    .func_b2(0,0,0,0.2);
+}
+.cm_bco03{
+    .func_b2(0,0,0,0.3);
+}
+.cm_bco04{
+    .func_b2(0,0,0,0.4);
+}
+.cm_bco05{
+    .func_b2(0,0,0,0.5);
+}
+.cm_bco06{
+    .func_b2(0,0,0,0.6);
+}
+.cm_bco07{
+    .func_b2(0,0,0,0.7);
+}
+.cm_bco08{
+    .func_b2(0,0,0,0.8);
+}
+.cm_bco09{
+    .func_b2(0,0,0,0.9);
+}
+//有透明度的背景颜色
+/*a 默认颜色*/
+.cm_ac1c a{.func_c(@c1)}
+.cm_ac2c a{.func_c(@c2)}
+.cm_ac3c a{.func_c(@c3)}
+.cm_ac4c a{.func_c(@c4)}
+.cm_ac5c a{.func_c(@c5)}
+.cm_ac6c a{.func_c(@c6)}
+.cm_ac7c a{.func_c(@c7)}
+.cm_a0c a{.func_c(@c0)}
+.cm_aec a{.func_c(@ce)}
+.cm_afc a{.func_c(@cf)}
+//a 默认颜色
+/*a:hover颜色*/
+.cm_hvc1c:hover{.func_c(@c1)}
+.cm_hvc2c:hover{.func_c(@c2)}
+.cm_hvc3c:hover{.func_c(@c3)}
+.cm_hvc4c:hover{.func_c(@c4)}
+.cm_hvc5c:hover{.func_c(@c5)}
+.cm_hvc6c:hover{.func_c(@c6)}
+.cm_hvc7c:hover{.func_c(@c7)}
+.cm_hv0c:hover{.func_c(@c0)}
+.cm_hvec:hover{.func_c(@ce)}
+.cm_hvfc:hover{.func_c(@cf)}
+//a:hover
+/*hover背景颜色*/
+.cm_hvc1b:hover{.func_b(@c1)}
+.cm_hvc2b:hover{.func_b(@c2)}
+.cm_hvc3b:hover{.func_b(@c3)}
+.cm_hvc4b:hover{.func_b(@c4)}
+.cm_hvc5b:hover{.func_b(@c5)}
+.cm_hvc6b:hover{.func_b(@c6)}
+.cm_hvc7b:hover{.func_b(@c7)}
+.cm_hv0b:hover{.func_b(@c0)}
+.cm_hveb:hover{.func_b(@ce)}
+.cm_hvfb:hover{.func_b(@cf)}
+//hover背景颜色
+//字体
+.func_fs(@c){
+  font-size:@c*@num_fs;
+}
+//字体
+//字体大小 font-size
+.cm_fs05{.func_fs(0.5)}
+.cm_fs06{.func_fs(0.6)}
+.cm_fs07{.func_fs(0.7)}
+.cm_fs08{.func_fs(0.8)}
+.cm_fs09{.func_fs(0.9)}
+.cm_fs1{.func_fs(1)}
+.cm_fs11{.func_fs(1.1)}
+.cm_fs12{.func_fs(1.2)}
+.cm_fs13{.func_fs(1.3)}
+.cm_fs14{.func_fs(1.4)}
+.cm_fs15{.func_fs(1.5)}
+.cm_fs16{.func_fs(1.6)}
+.cm_fs17{.func_fs(1.7)}
+.cm_fs18{.func_fs(1.8)}
+.cm_fs19{.func_fs(1.9)}
+.cm_fs2{.func_fs(2)}
+.cm_fs3{.func_fs(3)}
+.cm_fs4{.func_fs(4)}
+.cm_fs5{.func_fs(5)}
+//字体大小 font-size
+//font-weight
+.func_fwb(@c){
+    font-weight: @c;
+}
+.cm_fwn{.func_fwb(normal)}
+.cm_fwb{.func_fwb(bold)}
+.cm_fwbd{.func_fwb(bolder)}
+.cm_fwl{.func_fwb(lighter)}
+.cm_fwi{.func_fwb(inherit)}
+.cm_fw100{.func_fwb(100)}
+.cm_fw200{.func_fwb(200)}
+.cm_fw300{.func_fwb(300)}
+.cm_fw400{.func_fwb(400)}
+.cm_fw500{.func_fwb(500)}
+.cm_fw600{.func_fwb(600)}
+.cm_fw700{.func_fwb(700)}
+.cm_fw800{.func_fwb(800)}
+.cm_fw900{.func_fwb(900)}
+//font-weight
+//透明度
+.func_ot(@num){
+    @bfnum:@num*100;
+    -khtml-opacity:@num;
+    -webkit-opacity:@num;
+    -moz-opacity:@num;
+    filter:Alpha(opacity=@bfnum);
+    -ms-filter:progid:DXImageTransform.Microsoft.Alpha(opacity=@bfnum);
+    opacity:@num;
+}
+.cm_o0{.func_ot(0)}
+.cm_o01{.func_ot(0.1)}
+.cm_o02{.func_ot(0.2)}
+.cm_o03{.func_ot(0.3)}
+.cm_o04{.func_ot(0.4)}
+.cm_o05{.func_ot(0.5)}
+.cm_o06{.func_ot(0.6)}
+.cm_o07{.func_ot(0.7)}
+.cm_o08{.func_ot(0.8)}
+.cm_o09{.func_ot(0.9)}
+.cm_o1{.func_ot(1)}
+//透明度
+//display
+.func_d(@c){
+    display: @c;
+}
+.cm_dn{
+    .func_d(none);
+}
+.cm_db{
+    .func_d(block);
+}
+.cm_di{
+    .func_d(inline);
+}
+.cm_dib{
+    .func_d(inline-block);
+}
+.cm_dih{
+    .func_d(inherit);
+}
+.cm_dtab{
+    .func_d(table);
+}
+.cm_dtc{
+    .func_d(table-cell);
+}
+.cm_dit{
+    .func_d(inline-table);
+}
+//display
+//float
+.cm_fl{
+    .func3(float,left)
+}
+.cm_fr{
+    .func3(float,right)
+}
+.cm_fn{
+    .func3(float,none)
+}
+//float
+//align
+.func_ta(@t){
+    text-align: @t;
+}
+.cm_tl{.func_ta(left)}
+.cm_tc{.func_ta(center)}
+.cm_tr{.func_ta(right)}
+.cm_tj{.func_ta(justify)}
+//align
+//text-indent
+.func_ti(@t){
+    text-indent:@t*@num_fs;
+}
+.cm_ti05{.func_ti(0.5)}
+.cm_ti1{.func_ti(1)}
+.cm_ti105{.func_ti(1.5)}
+.cm_ti2{.func_ti(2)}
+.cm_ti205{.func_ti(2.5)}
+//text-indent
+//居中
+.cm_fc{
+    .func3(float,none);  
+    .func3(display,block); 
+    .func3(margin-left,auto);  
+    .func3(margin-right,auto);  
+}
+.cm_fc2{
+    &:extend(.cm_fc);//继承写法
+    .func3(margin-top,auto);  
+    .func3(margin-bottom,auto); 
+}
+.cm_fc3{
+    .func3(position,absolute);
+    .func3(left,50*@num_bf1);
+    .func3(top,50*@num_bf1);
+    .func(transform,translate(-50*@num_bf1,-50*@num_bf1));
+}
+.cm_fc4{
+    .func2(display,flex);
+    .func2(align-items,center);
+    .func2(justify-content,center);
+}
+//居中
+//垂直居中
+.cm_fc3tb{
+    .func3(position,absolute);
+    .func3(top,50*@num_bf1);
+    .func(transform,translate(-50*@num_bf1,-50*@num_bf1));
+}
+//垂直居中
+//水平居中
+.cm_fc3rl{
+    .func3(position,absolute);
+    .func3(left,50*@num_bf1);
+    .func(transform,translate(-50*@num_bf1,-50*@num_bf1));
+}
+//水平居中
+//position
+.func_pst(@p){
+    position:@p!important;
+}
+.cm_ps{.func_pst(static)}
+.cm_pa{.func_pst(absolute)}
+.cm_pf{.func_pst(fixed)}
+.cm_pr{.func_pst(relative)}
+.cm_tl0{top:0;left:0}
+.cm_tr0{top:0;right:0}
+.cm_bl0{bottom:0;left:0}
+.cm_br0{bottom:0;right:0}
+//position
+//top
+.func_top(@t){
+    top:@t*@num_fs!important;
+}
+.cm_t2f{.func_top(-2)}
+.cm_t105f{.func_top(-1.5)}
+.cm_t1f{.func_top(-1)}
+.cm_t05f{.func_top(-0.5)}
+.cm_t0{.func_top(0)}
+.cm_t01e{.func_top(0.1)}
+.cm_t02e{.func_top(0.2)}
+.cm_t025e{.func_top(0.25)}
+.cm_t05e{.func_top(0.5)}
+.cm_t1e{.func_top(1)}
+.cm_t2e{.func_top(2)}
+.cm_t3e{.func_top(3)}
+.cm_t4e{.func_top(4)}
+.cm_t5e{.func_top(5)}
+.cm_t6e{.func_top(6)}
+.cm_t7e{.func_top(7)}
+.cm_t8e{.func_top(8)}
+.cm_t9e{.func_top(9)}
+.cm_t10e{.func_top(10)}
+.cm_t11e{.func_top(11)}
+.cm_t12e{.func_top(12)}
+.cm_t13e{.func_top(13)}
+//top
+//bottom
+.func_bot(@t){
+    bottom:@t*@num_fs!important;
+}
+.cm_b2f{.func_bot(-2)}
+.cm_b05f{.func_bot(-1.5)}
+.cm_b1f{.func_bot(-1)}
+.cm_b05f{.func_bot(-0.5)}
+.cm_b01e{.func_bot(0.1)}
+.cm_b02e{.func_bot(0.2)}
+.cm_b025e{.func_bot(0.25)}
+.cm_b05e{.func_bot(0.5)}
+.cm_b1e{.func_bot(1)}
+.cm_b2e{.func_bot(2)}
+.cm_b3e{.func_bot(3)}
+.cm_b4e{.func_bot(4)}
+.cm_b5e{.func_bot(5)}
+.cm_b6e{.func_bot(6)}
+.cm_b7e{.func_bot(7)}
+.cm_b8e{.func_bot(8)}
+.cm_b9e{.func_bot(9)}
+.cm_b10e{.func_bot(10)}
+.cm_b11e{.func_bot(11)}
+.cm_b12e{.func_bot(12)}
+.cm_b13e{.func_bot(13)}
+//bottom
+//left
+.func_left(@t){
+    left:@t*@num_fs!important;
+}
+.cm_l2f{.func_left(-2)}
+.cm_l105f{.func_left(-1.5)}
+.cm_l1f{.func_left(-1)}
+.cm_l05f{.func_left(-0.5)}
+.cm_l01e{.func_left(0.1)}
+.cm_l02e{.func_left(0.2)}
+.cm_l025e{.func_left(0.25)}
+.cm_l05e{.func_left(0.5)}
+.cm_l1e{.func_left(1)}
+.cm_l2e{.func_left(2)}
+.cm_l3e{.func_left(3)}
+.cm_l4e{.func_left(4)}
+.cm_l5e{.func_left(5)}
+//left
+//right
+.func_right(@t){
+    right:@t*@num_fs!important;
+}
+.cm_r2f{.func_right(-2)}
+.cm_r105f{.func_right(-1.5)}
+.cm_r1f{.func_right(-1)}
+.cm_r05f{.func_right(-0.5)}
+.cm_r0e{.func_right(0)}
+.cm_r01e{.func_right(0.1)}
+.cm_r02e{.func_right(0.2)}
+.cm_r025e{.func_right(0.25)}
+.cm_r05e{.func_right(0.5)}
+.cm_r1e{.func_right(1)}
+.cm_r2e{.func_right(2)}
+.cm_r3e{.func_right(3)}
+.cm_r4e{.func_right(4)}
+.cm_r5e{.func_right(5)}
+//right
+//堆叠顺序
+.func_zi(@z){
+    z-index:@z!important;
+}
+.cm_z1{.func_zi(1)}
+.cm_z2{.func_zi(2)}
+.cm_z3{.func_zi(3)}
+.cm_z4{.func_zi(4)}
+.cm_z5{.func_zi(5)}
+.cm_z9{.func_zi(9)}
+.cm_z99{.func_zi(99)}
+.cm_z999{.func_zi(999)}
+.cm_z9999{.func_zi(9999)}
+.cm_z99999{.func_zi(99999)}
+.cm_z999999{.func_zi(999999)}
+//堆叠顺序
+//cursor
+.func_cs(@c){
+    cursor:@c!important;
+}
+.cm_csd{.func_cs(default)}
+.cm_csa{.func_cs(auto)}
+.cm_csc{.func_cs(crosshair)}
+.cm_csp{.func_cs(pointer)}
+.cm_csm{.func_cs(move)}
+.cm_cse{.func_cs(e-resize)}
+.cm_csne{.func_cs(ne-resize)}
+.cm_csnw{.func_cs(nw-resize)}
+.cm_csn{.func_cs(n-resize)}
+.cm_csse{.func_cs(se-resize)}
+.cm_cssw{.func_cs(sw-resize)}
+.cm_css{.func_cs(s-resize)}
+.cm_cswr{.func_cs(w-resize)}
+.cm_cst{.func_cs(text)}
+.cm_csw{.func_cs(wait)}
+.cm_csh{.func_cs(help)}
+//cursor
+//高度
+//height
+.func_h(@num){
+   height:@num*@num_fs!important;
+}
+.cm_h05{.func_h(0.5)}
+.cm_h075{.func_h(0.75)}
+.cm_h08{.func_h(0.8)}
+.cm_h1{.func_h(1)}
+.cm_h105{.func_h(1.5)}
+.cm_h2{.func_h(2)}
+.cm_h205{.func_h(2.5)}
+.cm_h3{.func_h(3)}
+.cm_h305{.func_h(3.5)}
+.cm_h4{.func_h(4)}
+.cm_h405{.func_h(4.5)}
+.cm_h5{.func_h(5)}
+.cm_h505{.func_h(5.5)}
+.cm_h6{.func_h(6)}
+.cm_h605{.func_h(6.5)}
+.cm_h7{.func_h(7)}
+.cm_h705{.func_h(7.5)}
+.cm_h8{.func_h(8)}
+.cm_h805{.func_h(8.5)}
+.cm_h9{.func_h(9)}
+.cm_h905{.func_h(9.5)}
+.cm_h10{.func_h(10)}
+.cm_h11{.func_h(11)}
+.cm_h12{.func_h(12)}
+.cm_h13{.func_h(13)}
+.cm_h14{.func_h(14)}
+.cm_h15{.func_h(15)}
+.cm_h16{.func_h(16)}
+.cm_h17{.func_h(17)}
+.cm_h18{.func_h(18)}
+.cm_h19{.func_h(19)}
+.cm_h20{.func_h(20)}
+.cm_h21{.func_h(21)}
+.cm_h22{.func_h(22)}
+.cm_h23{.func_h(23)}
+.cm_h24{.func_h(24)}
+.cm_h25{.func_h(25)}
+//height
+//height 百分
+.func_h2(@num){
+   height:@num*@num_bf1!important;
+}
+.cm_h10f{.func_h2(10)}
+.cm_h20f{.func_h2(20)}
+.cm_h30f{.func_h2(30)}
+.cm_h40f{.func_h2(40)}
+.cm_h50f{.func_h2(50)}
+.cm_h60f{.func_h2(60)}
+.cm_h70f{.func_h2(70)}
+.cm_h80f{.func_h2(80)}
+.cm_h90f{.func_h2(90)}
+//height 百分
+//min-height
+.func_minh(@num){
+    min-height:@num*@num_fs;
+    height:auto!important;
+    height:@num*@num_fs;
+ }
+ .cm_minh1{.func_minh(1)}
+ .cm_minh2{.func_minh(2)}
+ .cm_minh3{.func_minh(3)}
+ .cm_minh4{.func_minh(4)}
+ .cm_minh5{.func_minh(5)}
+ .cm_minh6{.func_minh(6)}
+ .cm_minh7{.func_minh(7)}
+ .cm_minh8{.func_minh(8)}
+ .cm_minh9{.func_minh(9)}
+ .cm_minh10{.func_minh(10)}
+ .cm_minh11{.func_minh(11)}
+ .cm_minh12{.func_minh(12)}
+ .cm_minh13{.func_minh(13)}
+ //min-height
+ //max-height
+.func_maxh(@num){
+    max-height:@num*@num_fs;
+    height:auto!important;
+    height:@num*@num_fs;
+ }
+ .cm_maxh1{.func_maxh(1)}
+ .cm_maxh2{.func_maxh(2)}
+ .cm_maxh3{.func_maxh(3)}
+ .cm_maxh4{.func_maxh(4)}
+ .cm_maxh5{.func_maxh(5)}
+ .cm_maxh6{.func_maxh(6)}
+ .cm_maxh7{.func_maxh(7)}
+ .cm_maxh8{.func_maxh(8)}
+ .cm_maxh9{.func_maxh(9)}
+ .cm_maxh10{.func_maxh(10)}
+ .cm_maxh11{.func_maxh(11)}
+ .cm_maxh12{.func_maxh(12)}
+ .cm_maxh13{.func_maxh(13)}
+ //max-height
+//line-height
+.func_lh(@num){
+    line-height:@num*@num_fs!important;
+}
+.cm_lh1{.func_lh(1)}
+.cm_lh105{.func_lh(1.5)}
+.cm_lh2{.func_lh(2)}
+.cm_lh205{.func_lh(2.5)}
+.cm_lh3{.func_lh(3)}
+.cm_lh305{.func_lh(3.5)}
+.cm_lh4{.func_lh(4)}
+.cm_lh405{.func_lh(4.5)}
+.cm_lh5{.func_lh(5)}
+.cm_lh505{.func_lh(5.5)}
+.cm_lh6{.func_lh(6)}
+.cm_lh605{.func_lh(6.5)}
+.cm_lh7{.func_lh(7)}
+.cm_lh705{.func_lh(7.5)}
+.cm_lh8{.func_lh(8)}
+.cm_lh805{.func_lh(8.5)}
+.cm_lh9{.func_lh(9)}
+.cm_lh905{.func_lh(9.5)}
+//line-height
+.func_hl(@num){
+    height:@num*@num_fs!important;
+    line-height:@num*@num_fs!important;
+}
+//height and line-height
+.cm_hl08{.func_hl(0.8)}
+.cm_hl1{.func_hl(1)}
+.cm_hl105{.func_hl(1.5)}
+.cm_hl2{.func_hl(2)}
+.cm_hl205{.func_hl(2.5)}
+.cm_hl3{.func_hl(3)}
+.cm_hl305{.func_hl(3.5)}
+.cm_hl4{.func_hl(4)}
+.cm_hl405{.func_hl(4.5)}
+.cm_hl5{.func_hl(5)}
+.cm_hl505{.func_hl(5.5)}
+.cm_hl6{.func_hl(6)}
+.cm_hl7{.func_hl(7)}
+.cm_hl8{.func_hl(8)}
+.cm_hl9{.func_hl(9)}
+//height and line-height
+//高度
+
+//宽度
+//width
+.func_w(@num){
+    width:@num*@num_fs!important;
+ }
+ .cm_w1{.func_w(1)}
+ .cm_w105{.func_w(1.5)}
+ .cm_w2{.func_w(2)}
+ .cm_w205{.func_w(2.5)}
+ .cm_w3{.func_w(3)}
+ .cm_w305{.func_w(3.5)}
+ .cm_w4{.func_w(4)}
+ .cm_w405{.func_w(4.5)}
+ .cm_w5{.func_w(5)}
+ .cm_w505{.func_w(5.5)}
+ .cm_w6{.func_w(6)}
+ .cm_w605{.func_w(6.5)}
+ .cm_w7{.func_w(7)}
+ .cm_w705{.func_w(7.5)}
+ .cm_w8{.func_w(8)}
+ .cm_w805{.func_w(8.5)}
+ .cm_w9{.func_w(9)}
+ .cm_w905{.func_w(9.5)} 
+ .cm_w10{.func_w(10)} 
+ .cm_w11{.func_w(11)} 
+ .cm_w12{.func_w(12)} 
+ .cm_w13{.func_w(13)} 
+//width 
+//width 百分
+.func_w2(@num){
+    width:@num*@num_bf1!important;
+ }
+.cm_w10f{.func_w2(10)}
+.cm_w20f{.func_w2(20)}
+.cm_w30f{.func_w2(30)}
+.cm_w40f{.func_w2(40)}
+.cm_w50f{.func_w2(50)}
+.cm_w60f{.func_w2(60)}
+.cm_w70f{.func_w2(70)}
+.cm_w80f{.func_w2(80)}
+.cm_w90f{.func_w2(90)}
+//width 百分
+// min-width
+.func_minw(@num){
+    min-width:@num*@num_fs;
+    width:auto!important;
+    width:@num*@num_fs;
+ }
+ .cm_minw1{.func_minw(1)}
+ .cm_minw2{.func_minw(2)}
+ .cm_minw3{.func_minw(3)}
+ .cm_minw4{.func_minw(4)}
+ .cm_minw5{.func_minw(5)}
+ .cm_minw6{.func_minw(6)}
+ .cm_minw7{.func_minw(7)}
+ .cm_minw8{.func_minw(8)}
+ .cm_minw9{.func_minw(9)}
+ .cm_minw10{.func_minw(10)}
+ .cm_minw11{.func_minw(11)}
+ .cm_minw12{.func_minw(12)}
+ .cm_minw13{.func_minw(13)}
+//  min-width
+// max-width
+ .func_maxw(@num){
+    max-width:@num*@num_fs;
+    width:auto!important;
+    width:@num*@num_fs;
+ }
+ .cm_maxw1{.func_maxw(1)}
+ .cm_maxw2{.func_maxw(2)}
+ .cm_maxw3{.func_maxw(3)}
+ .cm_maxw4{.func_maxw(4)}
+ .cm_maxw5{.func_maxw(5)}
+ .cm_maxw6{.func_maxw(6)}
+ .cm_maxw7{.func_maxw(7)}
+ .cm_maxw8{.func_maxw(8)}
+ .cm_maxw9{.func_maxw(9)}
+ .cm_maxw10{.func_maxw(10)}
+ .cm_maxw11{.func_maxw(11)}
+ .cm_maxw12{.func_maxw(12)}
+ .cm_maxw13{.func_maxw(13)}
+// max-width
+//宽度
+
+//宽高
+.func_wh(@a){
+    width:@a*@num_fs!important;
+    height:@a*@num_fs!important;
+}
+.cm_wh05{.func_wh(0.5)}
+.cm_wh1{.func_wh(1)}
+.cm_wh105{.func_wh(1.5)}
+.cm_wh2{.func_wh(2)}
+.cm_wh205{.func_wh(2.5)}
+.cm_wh3{.func_wh(3)}
+.cm_wh305{.func_wh(3.5)}
+.cm_wh4{.func_wh(4)}
+.cm_wh405{.func_wh(4.5)}
+.cm_wh5{.func_wh(5)}
+.cm_wh505{.func_wh(5.5)}
+.cm_wh6{.func_wh(6)}
+.cm_wh605{.func_wh(6.5)}
+.cm_wh7{.func_wh(7)}
+.cm_wh705{.func_wh(7.5)}
+.cm_wh8{.func_wh(8)}
+.cm_wh805{.func_wh(8.5)}
+.cm_wh9{.func_wh(9)}
+.cm_wh905{.func_wh(9.5)}
+.cm_wh10{.func_wh(10)}
+//宽高
+
+//外边距 margin
+//margin:*
+.func_mg(@m){
+    margin:@m*@num_fs!important;
+}
+.cm_m0{.func_mg(0)}
+.cm_m01{.func_mg(0.1)}
+.cm_m02{.func_mg(0.2)}
+.cm_m025{.func_mg(0.25)}
+.cm_m03{.func_mg(0.3)}
+.cm_m035{.func_mg(0.35)}
+.cm_m04{.func_mg(0.4)}
+.cm_m045{.func_mg(0.45)}
+.cm_m05{.func_mg(0.5)}
+.cm_m06{.func_mg(0.6)}
+.cm_m07{.func_mg(0.7)}
+.cm_m08{.func_mg(0.8)}
+.cm_m09{.func_mg(0.9)}
+.cm_m1{.func_mg(1)}
+.cm_m105{.func_mg(1.5)}
+.cm_m2{.func_mg(2)}
+.cm_m205{.func_mg(2.5)}
+.cm_m3{.func_mg(3)}
+//margin:*
+//margin:* *
+.func_mg2(@m1,@m2){
+    margin:@m1*@num_fs @m2*@num_fs!important;
+}
+//margin:* 0
+.cm_mtb01{.func_mg2(0.1,0)}
+.cm_mtb02{.func_mg2(0.2,0)}
+.cm_mtb03{.func_mg2(0.3,0)}
+.cm_mtb04{.func_mg2(0.4,0)}
+.cm_mtb05{.func_mg2(0.5,0)}
+.cm_mtb06{.func_mg2(0.6,0)}
+.cm_mtb07{.func_mg2(0.7,0)}
+.cm_mtb08{.func_mg2(0.8,0)}
+.cm_mtb09{.func_mg2(0.9,0)}
+.cm_mtb1{.func_mg2(1,0)}
+.cm_mtb105{.func_mg2(1.5,0)}
+.cm_mtb2{.func_mg2(2,0)}
+.cm_mtb205{.func_mg2(2.5,0)}
+.cm_mtb3{.func_mg2(3,0)}
+.cm_mtb205{.func_mg2(2.5,0)}
+.cm_mtb4{.func_mg2(4,0)}
+.cm_mtb405{.func_mg2(4.5,0)}
+.cm_mtb5{.func_mg2(5,0)}
+.cm_mtb505{.func_mg2(5.5,0)}
+.cm_mtb6{.func_mg2(6,0)}
+//margin:* 0
+//margin:0 *
+.cm_mrl01{.func_mg2(0,0.1)}
+.cm_mrl02{.func_mg2(0,0.2)}
+.cm_mrl03{.func_mg2(0,0.3)}
+.cm_mrl04{.func_mg2(0,0.4)}
+.cm_mrl05{.func_mg2(0,0.5)}
+.cm_mrl06{.func_mg2(0,0.6)}
+.cm_mrl07{.func_mg2(0,0.7)}
+.cm_mrl08{.func_mg2(0,0.8)}
+.cm_mrl09{.func_mg2(0,0.9)}
+.cm_mrl1{.func_mg2(0,1)}
+.cm_mrl105{.func_mg2(0,1.5)}
+.cm_mrl2{.func_mg2(0,2)}
+.cm_mrl205{.func_mg2(0,2.5)}
+.cm_mrl3{.func_mg2(0,3)}
+.cm_mrl305{.func_mg2(0,3.5)}
+.cm_mrl4{.func_mg2(0,4)}
+.cm_mrl405{.func_mg2(0,4.5)}
+.cm_mrl5{.func_mg2(0,5)}
+.cm_mrl505{.func_mg2(0,5.5)}
+.cm_mrl6{.func_mg2(0,6)}
+//margin:0 *
+//margin:* *
+
+//margin-top
+.func_mt(@m){
+    margin-top:@m*@num_fs!important;
+}
+.cm_mt2f{.func_mt(-2)}
+.cm_mt105f{.func_mt(-1.5)}
+.cm_mt1f{.func_mt(-1)}
+.cm_mt05f{.func_mt(-0.5)}
+.cm_mt01{.func_mt(0.1)}
+.cm_mt02{.func_mt(0.2)}
+.cm_mt03{.func_mt(0.3)}
+.cm_mt04{.func_mt(0.4)}
+.cm_mt05{.func_mt(0.5)}
+.cm_mt06{.func_mt(0.6)}
+.cm_mt07{.func_mt(0.7)}
+.cm_mt08{.func_mt(0.8)}
+.cm_mt09{.func_mt(0.9)}
+.cm_mt1{.func_mt(1)}
+.cm_mt101{.func_mt(1.1)}
+.cm_mt102{.func_mt(1.2)}
+.cm_mt103{.func_mt(1.3)}
+.cm_mt104{.func_mt(1.4)}
+.cm_mt105{.func_mt(1.5)}
+.cm_mt2{.func_mt(2)}
+.cm_mt205{.func_mt(2.5)}
+.cm_mt3{.func_mt(3)}
+.cm_mt305{.func_mt(3.5)}
+.cm_mt4{.func_mt(4)}
+.cm_mt405{.func_mt(4.5)}
+.cm_mt5{.func_mt(5)}
+.cm_mt6{.func_mt(6)}
+.cm_mt7{.func_mt(7)}
+.cm_mt8{.func_mt(8)}
+.cm_mt9{.func_mt(9)}
+//margin-top
+//margin-bottom
+.func_mb(@m){
+    margin-bottom:@m*@num_fs!important;
+}
+.cm_mb2f{.func_mb(-2)}
+.cm_mb105f{.func_mb(-1.5)}
+.cm_mb1f{.func_mb(-1)}
+.cm_mb05f{.func_mb(-0.5)}
+.cm_mb01{.func_mb(0.1)}
+.cm_mb02{.func_mb(0.2)}
+.cm_mb03{.func_mb(0.3)}
+.cm_mb04{.func_mb(0.4)}
+.cm_mb05{.func_mb(0.5)}
+.cm_mb06{.func_mb(0.6)}
+.cm_mb07{.func_mb(0.7)}
+.cm_mb08{.func_mb(0.8)}
+.cm_mb09{.func_mb(0.9)}
+.cm_mb1{.func_mb(1)}
+.cm_mb105{.func_mb(1.5)}
+.cm_mb2{.func_mb(2)}
+.cm_mb205{.func_mb(2.5)}
+.cm_mb3{.func_mb(3)}
+.cm_mb305{.func_mb(3.5)}
+.cm_mb4{.func_mb(4)}
+.cm_mb405{.func_mb(4.5)}
+.cm_mb5{.func_mb(5)}
+.cm_mb6{.func_mb(6)}
+.cm_mb7{.func_mb(7)}
+.cm_mb8{.func_mb(8)}
+.cm_mb9{.func_mb(9)}
+//margin-bottom
+//margin-right
+.func_mr(@m){
+    margin-right:@m*@num_fs!important;
+}
+.cm_mr01{.func_mr(-2)}
+.cm_mr01{.func_mr(-1.5)}
+.cm_mr01{.func_mr(-1)}
+.cm_mr05f{.func_mr(-0.5)}
+.cm_mr01{.func_mr(0.1)}
+.cm_mr02{.func_mr(0.2)}
+.cm_mr03{.func_mr(0.3)}
+.cm_mr04{.func_mr(0.4)}
+.cm_mr05{.func_mr(0.5)}
+.cm_mr06{.func_mr(0.6)}
+.cm_mr07{.func_mr(0.7)}
+.cm_mr08{.func_mr(0.8)}
+.cm_mr09{.func_mr(0.9)}
+.cm_mr1{.func_mr(1)}
+.cm_mr105{.func_mr(1.5)}
+.cm_mr2{.func_mr(2)}
+.cm_mr205{.func_mr(2.5)}
+.cm_mr3{.func_mr(3)}
+.cm_mr305{.func_mr(3.5)}
+.cm_mr4{.func_mr(4)}
+.cm_mr405{.func_mr(4.5)}
+.cm_mr5{.func_mr(5)}
+.cm_mr6{.func_mr(6)}
+.cm_mr7{.func_mr(7)}
+.cm_mr9{.func_mr(9)}
+.cm_mr8{.func_mr(8)}
+.cm_mr9{.func_mr(9)}
+//margin-right
+//margin-left
+.func_ml(@m){
+    margin-left:@m*@num_fs!important;
+}
+.cm_ml2f{.func_ml(-2)}
+.cm_ml105f{.func_ml(-1.5)}
+.cm_ml1f{.func_ml(-1)}
+.cm_ml05f{.func_ml(-0.5)}
+.cm_ml01{.func_ml(0.1)}
+.cm_ml02{.func_ml(0.2)}
+.cm_ml03{.func_ml(0.3)}
+.cm_ml04{.func_ml(0.4)}
+.cm_ml05{.func_ml(0.5)}
+.cm_ml06{.func_ml(0.6)}
+.cm_ml07{.func_ml(0.7)}
+.cm_ml08{.func_ml(0.8)}
+.cm_ml09{.func_ml(0.9)}
+.cm_ml1{.func_ml(1)}
+.cm_ml105{.func_ml(1.5)}
+.cm_ml2{.func_ml(2)}
+.cm_ml205{.func_ml(2.5)}
+.cm_ml3{.func_ml(3)}
+.cm_ml305{.func_ml(3.5)}
+.cm_ml4{.func_ml(4)}
+.cm_ml405{.func_ml(4.5)}
+.cm_ml5{.func_ml(5)}
+.cm_ml6{.func_ml(6)}
+.cm_ml7{.func_ml(7)}
+.cm_ml9{.func_ml(9)}
+.cm_ml8{.func_ml(8)}
+.cm_ml9{.func_ml(9)}
+//margin-left
+//margin:*
+//外边距 margin
+
+//内边距padding
+//padding:*
+.func_pd(@m){
+    padding:@m*@num_fs!important;
+}
+.cm_pd0{.func_pd(0)}
+.cm_pd01{.func_pd(0.1)}
+.cm_pd02{.func_pd(0.2)}
+.cm_pd025{.func_pd(0.25)}
+.cm_pd05{.func_pd(0.5)}
+.cm_pd075{.func_pd(0.75)}
+.cm_pd1{.func_pd(1)}
+.cm_pd105{.func_pd(1.5)}
+.cm_pd2{.func_pd(2)}
+.cm_pd205{.func_pd(2.5)}
+.cm_pd3{.func_pd(3)}
+//padding:*
+//padding:* 0
+.func_pd2(@m){
+    padding:@m*@num_fs 0!important;
+}
+.cm_ptb01{.func_pd2(0.1)}
+.cm_ptb02{.func_pd2(0.2)}
+.cm_ptb025{.func_pd2(0.25)}
+.cm_ptb05{.func_pd2(0.5)}
+.cm_ptb075{.func_pd2(0.75)}
+.cm_ptb1{.func_pd2(1)}
+.cm_ptb105{.func_pd2(1.5)}
+.cm_ptb2{.func_pd2(2)}
+.cm_ptb205{.func_pd2(2.5)}
+.cm_ptb3{.func_pd2(3)}
+.cm_ptb305{.func_pd2(3.5)}
+.cm_ptb4{.func_pd2(4)}
+.cm_ptb405{.func_pd2(4.5)}
+.cm_ptb5{.func_pd2(5)}
+.cm_ptb505{.func_pd2(5.5)}
+//padding:*
+//padding:0 *
+.func_pd3(@m){
+    padding:0 @m*@num_fs!important;
+}
+.cm_prl01{.func_pd3(0.1)}
+.cm_prl02{.func_pd3(0.2)}
+.cm_prl025{.func_pd3(0.25)}
+.cm_prl05{.func_pd3(0.5)}
+.cm_prl075{.func_pd3(0.75)}
+.cm_prl1{.func_pd3(1)}
+.cm_prl105{.func_pd3(1.5)}
+.cm_prl2{.func_pd3(2)}
+.cm_prl205{.func_pd3(2.5)}
+.cm_prl3{.func_pd3(3)}
+.cm_prl305{.func_pd3(3.5)}
+.cm_prl4{.func_pd3(4)}
+.cm_prl405{.func_pd3(4.5)}
+.cm_prl5{.func_pd3(5)}
+.cm_prl505{.func_pd3(5.5)}
+.cm_prl6{.func_pd3(6)}
+.cm_prl605{.func_pd3(6.5)}
+.cm_prl7{.func_pd3(7)}
+//padding:0 *
+//padding-top
+.func_pd4(@m){
+    padding-top:@m*@num_fs!important;
+}
+.cm_pt2f{.func_pd4(-2)}
+.cm_pt105f{.func_pd4(-1.5)}
+.cm_pt1f{.func_pd4(-1)}
+.cm_pt05f{.func_pd4(-0.5)}
+.cm_pt0{.func_pd4(0)}
+.cm_pt01{.func_pd4(0.1)}
+.cm_pt02{.func_pd4(0.2)}
+.cm_pt025{.func_pd4(0.25)}
+.cm_pt05{.func_pd4(0.5)}
+.cm_pt075{.func_pd4(0.75)}
+.cm_pt1{.func_pd4(1)}
+.cm_pt2{.func_pd4(2)}
+.cm_pt3{.func_pd4(3)}
+.cm_pt4{.func_pd4(4)}
+.cm_pt5{.func_pd4(5)}
+//padding-top
+//padding-bottom
+.func_pd5(@m){
+    padding-bottom:@m*@num_fs!important;
+}
+.cm_pb2f{.func_pd5(-2)}
+.cm_pb105f{.func_pd5(-1.5)}
+.cm_pb1f{.func_pd5(-1)}
+.cm_pb05f{.func_pd5(-0.5)}
+.cm_pb0{.func_pd5(0)}
+.cm_pb01{.func_pd5(0.1)}
+.cm_pb02{.func_pd5(0.2)}
+.cm_pb025{.func_pd5(0.25)}
+.cm_pb05{.func_pd5(0.5)}
+.cm_pb075{.func_pd5(0.75)}
+.cm_pb1{.func_pd5(1)}
+.cm_pb2{.func_pd5(2)}
+.cm_pb3{.func_pd5(3)}
+.cm_pb4{.func_pd5(4)}
+.cm_pb5{.func_pd5(5)}
+//padding-bottom
+//padding-left
+.func_pd6(@m){
+    padding-left:@m*@num_fs!important;
+}
+.cm_pl2f{.func_pd6(-2)}
+.cm_pl105f{.func_pd6(-1.5)}
+.cm_pl1f{.func_pd6(-1)}
+.cm_pl05f{.func_pd6(-0.5)}
+.cm_pl0{.func_pd6(0)}
+.cm_pl01{.func_pd6(0.1)}
+.cm_pl02{.func_pd6(0.2)}
+.cm_pl025{.func_pd6(0.25)}
+.cm_pl05{.func_pd6(0.5)}
+.cm_pl075{.func_pd6(0.75)}
+.cm_pl1{.func_pd6(1)}
+.cm_pl105{.func_pd6(1.5)}
+.cm_pl2{.func_pd6(2)}
+.cm_pl205{.func_pd6(2.5)}
+.cm_pl3{.func_pd6(3)}
+.cm_pl305{.func_pd6(3.5)}
+.cm_pl4{.func_pd6(4)}
+.cm_pl405{.func_pd6(4.5)}
+.cm_pl5{.func_pd6(5)}
+.cm_pl505{.func_pd6(5.5)}
+.cm_pl6{.func_pd6(6)}
+.cm_pl605{.func_pd6(6.5)}
+.cm_pl7{.func_pd6(7)}
+.cm_pl705{.func_pd6(7.5)}
+.cm_pl8{.func_pd6(8)}
+.cm_pl805{.func_pd6(8.5)}
+.cm_pl9{.func_pd6(9)}
+.cm_pl905{.func_pd6(9.5)}
+.cm_pl10{.func_pd6(10)}
+//padding-left
+//padding-right
+.func_pd7(@m){
+    padding-right:@m*@num_fs!important;
+}
+.cm_pr2f{.func_pd7(-2)}
+.cm_pr105f{.func_pd7(-1.5)}
+.cm_pr1f{.func_pd7(-1)}
+.cm_pr05f{.func_pd7(-0.5)}
+.cm_pr0{.func_pd7(0)}
+.cm_pr01{.func_pd7(0.1)}
+.cm_pr02{.func_pd7(0.2)}
+.cm_pr025{.func_pd7(0.25)}
+.cm_pr05{.func_pd7(0.5)}
+.cm_pr075{.func_pd7(0.75)}
+.cm_pr1{.func_pd7(1)}
+.cm_pr105{.func_pd7(1.5)}
+.cm_pr2{.func_pd7(2)}
+.cm_pr205{.func_pd7(2.5)}
+.cm_pr3{.func_pd7(3)}
+.cm_pr305{.func_pd7(3.5)}
+.cm_pr4{.func_pd7(4)}
+.cm_pr405{.func_pd7(4.5)}
+.cm_pr5{.func_pd7(5)}
+.cm_pr505{.func_pd7(5.5)}
+.cm_pr6{.func_pd7(6)}
+.cm_pr605{.func_pd7(6.5)}
+.cm_pr7{.func_pd7(7)}
+.cm_pr705{.func_pd7(7.5)}
+.cm_pr8{.func_pd7(8)}
+.cm_pr805{.func_pd7(8.5)}
+.cm_pr9{.func_pd7(9)}
+.cm_pr905{.func_pd7(9.5)}
+.cm_pr10{.func_pd7(10)}
+//padding-right
+//内边距padding
+
+//边框border
+.func_bd(@b){
+    border:@b!important;
+}
+//border
+.cm_bd0{.func_bd(0)}
+
+.cm_b1c1d{.func_bd(1px dashed @c1)}
+.cm_b1c2d{.func_bd(1px dashed @c2)}
+.cm_b1c3d{.func_bd(1px dashed @c3)}
+.cm_b1c4d{.func_bd(1px dashed @c4)}
+.cm_b1c5d{.func_bd(1px dashed @c5)}
+.cm_b1c6d{.func_bd(1px dashed @c6)}
+.cm_b1c7d{.func_bd(1px dashed @c7)}
+.cm_b1c0d{.func_bd(1px dashed @c0)}
+.cm_b1ccd{.func_bd(1px dashed @cc)}
+.cm_b1cdd{.func_bd(1px dashed @cd)}
+.cm_b1ced{.func_bd(1px dashed @ce)}
+.cm_b1cfd{.func_bd(1px dashed @cf)}
+
+.cm_b1c1{.func_bd(1px solid @c1)}
+.cm_b1c2{.func_bd(1px solid @c2)}
+.cm_b1c3{.func_bd(1px solid @c3)}
+.cm_b1c4{.func_bd(1px solid @c4)}
+.cm_b1c5{.func_bd(1px solid @c5)}
+.cm_b1c6{.func_bd(1px solid @c6)}
+.cm_b1c7{.func_bd(1px solid @c7)}
+.cm_b1c0{.func_bd(1px solid @c0)}
+.cm_b1cc{.func_bd(1px solid @cc)}
+.cm_b1cd{.func_bd(1px solid @cd)}
+.cm_b1ce{.func_bd(1px solid @ce)}
+.cm_b1cf{.func_bd(1px solid @cf)}
+
+.cm_b2c1{.func_bd(2px solid @c1)}
+.cm_b2c2{.func_bd(2px solid @c2)}
+.cm_b2c3{.func_bd(2px solid @c3)}
+.cm_b2c4{.func_bd(2px solid @c4)}
+.cm_b2c5{.func_bd(2px solid @c5)}
+.cm_b2c6{.func_bd(2px solid @c6)}
+.cm_b2c7{.func_bd(2px solid @c7)}
+.cm_b2c0{.func_bd(2px solid @c0)}
+.cm_b2cc{.func_bd(2px solid @cc)}
+.cm_b2cd{.func_bd(2px solid @cd)}
+.cm_b2ce{.func_bd(2px solid @ce)}
+.cm_b2cf{.func_bd(2px solid @cf)}
+
+.cm_b3c1{.func_bd(3px solid @c1)}
+.cm_b3c2{.func_bd(3px solid @c2)}
+.cm_b3c3{.func_bd(3px solid @c3)}
+.cm_b3c4{.func_bd(3px solid @c4)}
+.cm_b3c5{.func_bd(3px solid @c5)}
+.cm_b3c6{.func_bd(3px solid @c6)}
+.cm_b3c7{.func_bd(3px solid @c7)}
+.cm_b3c0{.func_bd(3px solid @c0)}
+.cm_b3cc{.func_bd(3px solid @cc)}
+.cm_b3cd{.func_bd(3px solid @cd)}
+.cm_b3ce{.func_bd(3px solid @ce)}
+.cm_b3cf{.func_bd(3px solid @cf)}
+//border
+//border-top
+.func_bt(@b){
+    border-top:@b!important;
+}
+.cm_bt1c1d{.func_bt(1px dashed @c1)}
+.cm_bt1c2d{.func_bt(1px dashed @c2)}
+.cm_bt1c3d{.func_bt(1px dashed @c3)}
+.cm_bt1c4d{.func_bt(1px dashed @c4)}
+.cm_bt1c5d{.func_bt(1px dashed @c5)}
+.cm_bt1c6d{.func_bt(1px dashed @c6)}
+.cm_bt1c7d{.func_bt(1px dashed @c7)}
+.cm_bt1c0d{.func_bt(1px dashed @c0)}
+.cm_bt1ccd{.func_bt(1px dashed @cc)}
+.cm_bt1cdd{.func_bt(1px dashed @cd)}
+.cm_bt1ced{.func_bt(1px dashed @ce)}
+.cm_bt1cfd{.func_bt(1px dashed @cf)}
+
+.cm_bt1c1{.func_bt(1px solid @c1)}
+.cm_bt1c2{.func_bt(1px solid @c2)}
+.cm_bt1c3{.func_bt(1px solid @c3)}
+.cm_bt1c4{.func_bt(1px solid @c4)}
+.cm_bt1c5{.func_bt(1px solid @c5)}
+.cm_bt1c6{.func_bt(1px solid @c6)}
+.cm_bt1c7{.func_bt(1px solid @c7)}
+.cm_bt1c0{.func_bt(1px solid @c0)}
+.cm_bt1cc{.func_bt(1px solid @cc)}
+.cm_bt1cd{.func_bt(1px solid @cd)}
+.cm_bt1ce{.func_bt(1px solid @ce)}
+.cm_bt1cf{.func_bt(1px solid @cf)}
+
+.cm_bt2c1{.func_bt(2px solid @c1)}
+.cm_bt2c2{.func_bt(2px solid @c2)}
+.cm_bt2c3{.func_bt(2px solid @c3)}
+.cm_bt2c4{.func_bt(2px solid @c4)}
+.cm_bt2c5{.func_bt(2px solid @c5)}
+.cm_bt2c6{.func_bt(2px solid @c6)}
+.cm_bt2c7{.func_bt(2px solid @c7)}
+.cm_bt2c0{.func_bt(2px solid @c0)}
+.cm_bt2cc{.func_bt(2px solid @cc)}
+.cm_bt2cd{.func_bt(2px solid @cd)}
+.cm_bt2ce{.func_bt(2px solid @ce)}
+.cm_bt2cf{.func_bt(2px solid @cf)}
+
+.cm_bt3c1{.func_bt(3px solid @c1)}
+.cm_bt3c2{.func_bt(3px solid @c2)}
+.cm_bt3c3{.func_bt(3px solid @c3)}
+.cm_bt3c4{.func_bt(3px solid @c4)}
+.cm_bt3c5{.func_bt(3px solid @c5)}
+.cm_bt3c6{.func_bt(3px solid @c6)}
+.cm_bt3c7{.func_bt(3px solid @c7)}
+.cm_bt3c0{.func_bt(3px solid @c0)}
+.cm_bt3cc{.func_bt(3px solid @cc)}
+.cm_bt3cd{.func_bt(3px solid @cd)}
+.cm_bt3ce{.func_bt(3px solid @ce)}
+.cm_bt3cf{.func_bt(3px solid @cf)}
+//border-top
+//border-bottom
+.func_bb(@b){
+    border-bottom:@b!important;
+}
+.cm_bb1c1d{.func_bb(1px dashed @c1)}
+.cm_bb1c2d{.func_bb(1px dashed @c2)}
+.cm_bb1c3d{.func_bb(1px dashed @c3)}
+.cm_bb1c4d{.func_bb(1px dashed @c4)}
+.cm_bb1c5d{.func_bb(1px dashed @c5)}
+.cm_bb1c6d{.func_bb(1px dashed @c6)}
+.cm_bb1c7d{.func_bb(1px dashed @c7)}
+.cm_bb1c0d{.func_bb(1px dashed @c0)}
+.cm_bb1ccd{.func_bb(1px dashed @cc)}
+.cm_bb1cdd{.func_bb(1px dashed @cd)}
+.cm_bb1ced{.func_bb(1px dashed @ce)}
+.cm_bb1cfd{.func_bb(1px dashed @cf)}
+
+.cm_bb1c1{.func_bb(1px solid @c1)}
+.cm_bb1c2{.func_bb(1px solid @c2)}
+.cm_bb1c3{.func_bb(1px solid @c3)}
+.cm_bb1c4{.func_bb(1px solid @c4)}
+.cm_bb1c5{.func_bb(1px solid @c5)}
+.cm_bb1c6{.func_bb(1px solid @c6)}
+.cm_bb1c7{.func_bb(1px solid @c7)}
+.cm_bb1c0{.func_bb(1px solid @c0)}
+.cm_bb1cc{.func_bb(1px solid @cc)}
+.cm_bb1cd{.func_bb(1px solid @cd)}
+.cm_bb1ce{.func_bb(1px solid @ce)}
+.cm_bb1cf{.func_bb(1px solid @cf)}
+
+.cm_bb2c1{.func_bb(2px solid @c1)}
+.cm_bb2c2{.func_bb(2px solid @c2)}
+.cm_bb2c3{.func_bb(2px solid @c3)}
+.cm_bb2c4{.func_bb(2px solid @c4)}
+.cm_bb2c5{.func_bb(2px solid @c5)}
+.cm_bb2c6{.func_bb(2px solid @c6)}
+.cm_bb2c7{.func_bb(2px solid @c7)}
+.cm_bb2c0{.func_bb(2px solid @c0)}
+.cm_bb2cc{.func_bb(2px solid @cc)}
+.cm_bb2cd{.func_bb(2px solid @cd)}
+.cm_bb2ce{.func_bb(2px solid @ce)}
+.cm_bb2cf{.func_bb(2px solid @cf)}
+
+.cm_bb3c1{.func_bb(3px solid @c1)}
+.cm_bb3c2{.func_bb(3px solid @c2)}
+.cm_bb3c3{.func_bb(3px solid @c3)}
+.cm_bb3c4{.func_bb(3px solid @c4)}
+.cm_bb3c5{.func_bb(3px solid @c5)}
+.cm_bb3c6{.func_bb(3px solid @c6)}
+.cm_bb3c7{.func_bb(3px solid @c7)}
+.cm_bb3c0{.func_bb(3px solid @c0)}
+.cm_bb3cc{.func_bb(3px solid @cc)}
+.cm_bb3cd{.func_bb(3px solid @cd)}
+.cm_bb3ce{.func_bb(3px solid @ce)}
+.cm_bb3cf{.func_bb(3px solid @cf)}
+//border-bottom
+//border-left
+.func_bl(@b){
+    border-left:@b!important;
+}
+.cm_bl1c1d{.func_bl(1px dashed @c1)}
+.cm_bl1c2d{.func_bl(1px dashed @c2)}
+.cm_bl1c3d{.func_bl(1px dashed @c3)}
+.cm_bl1c4d{.func_bl(1px dashed @c4)}
+.cm_bl1c5d{.func_bl(1px dashed @c5)}
+.cm_bl1c6d{.func_bl(1px dashed @c6)}
+.cm_bl1c7d{.func_bl(1px dashed @c7)}
+.cm_bl1c0d{.func_bl(1px dashed @c0)}
+.cm_bl1ccd{.func_bl(1px dashed @cc)}
+.cm_bl1cdd{.func_bl(1px dashed @cd)}
+.cm_bl1ced{.func_bl(1px dashed @ce)}
+.cm_bl1cfd{.func_bl(1px dashed @cf)}
+
+.cm_bl1c1{.func_bl(1px solid @c1)}
+.cm_bl1c2{.func_bl(1px solid @c2)}
+.cm_bl1c3{.func_bl(1px solid @c3)}
+.cm_bl1c4{.func_bl(1px solid @c4)}
+.cm_bl1c5{.func_bl(1px solid @c5)}
+.cm_bl1c6{.func_bl(1px solid @c6)}
+.cm_bl1c7{.func_bl(1px solid @c7)}
+.cm_bl1c0{.func_bl(1px solid @c0)}
+.cm_bl1cc{.func_bl(1px solid @cc)}
+.cm_bl1cd{.func_bl(1px solid @cd)}
+.cm_bl1ce{.func_bl(1px solid @ce)}
+.cm_bl1cf{.func_bl(1px solid @cf)}
+
+.cm_bl2c1{.func_bl(2px solid @c1)}
+.cm_bl2c2{.func_bl(2px solid @c2)}
+.cm_bl2c3{.func_bl(2px solid @c3)}
+.cm_bl2c4{.func_bl(2px solid @c4)}
+.cm_bl2c5{.func_bl(2px solid @c5)}
+.cm_bl2c6{.func_bl(2px solid @c6)}
+.cm_bl2c7{.func_bl(2px solid @c7)}
+.cm_bl2c0{.func_bl(2px solid @c0)}
+.cm_bl2cc{.func_bl(2px solid @cc)}
+.cm_bl2cd{.func_bl(2px solid @cd)}
+.cm_bl2ce{.func_bl(2px solid @ce)}
+.cm_bl2cf{.func_bl(2px solid @cf)}
+
+.cm_bl3c1{.func_bl(3px solid @c1)}
+.cm_bl3c2{.func_bl(3px solid @c2)}
+.cm_bl3c3{.func_bl(3px solid @c3)}
+.cm_bl3c4{.func_bl(3px solid @c4)}
+.cm_bl3c5{.func_bl(3px solid @c5)}
+.cm_bl3c6{.func_bl(3px solid @c6)}
+.cm_bl3c7{.func_bl(3px solid @c7)}
+.cm_bl3c0{.func_bl(3px solid @c0)}
+.cm_bl3cc{.func_bl(3px solid @cc)}
+.cm_bl3cd{.func_bl(3px solid @cd)}
+.cm_bl3ce{.func_bl(3px solid @ce)}
+.cm_bl3cf{.func_bl(3px solid @cf)}
+//border-left
+//border-right
+.func_br(@b){
+    border-right:@b!important;
+}
+.cm_br1c1d{.func_br(1px dashed @c1)}
+.cm_br1c2d{.func_br(1px dashed @c2)}
+.cm_br1c3d{.func_br(1px dashed @c3)}
+.cm_br1c4d{.func_br(1px dashed @c4)}
+.cm_br1c5d{.func_br(1px dashed @c5)}
+.cm_br1c6d{.func_br(1px dashed @c6)}
+.cm_br1c7d{.func_br(1px dashed @c7)}
+.cm_br1c0d{.func_br(1px dashed @c0)}
+.cm_br1ccd{.func_br(1px dashed @cc)}
+.cm_br1cdd{.func_br(1px dashed @cd)}
+.cm_br1ced{.func_br(1px dashed @ce)}
+.cm_br1cfd{.func_br(1px dashed @cf)}
+
+.cm_br1c1{.func_br(1px solid @c1)}
+.cm_br1c2{.func_br(1px solid @c2)}
+.cm_br1c3{.func_br(1px solid @c3)}
+.cm_br1c4{.func_br(1px solid @c4)}
+.cm_br1c5{.func_br(1px solid @c5)}
+.cm_br1c6{.func_br(1px solid @c6)}
+.cm_br1c7{.func_br(1px solid @c7)}
+.cm_br1c0{.func_br(1px solid @c0)}
+.cm_br1cc{.func_br(1px solid @cc)}
+.cm_br1cd{.func_br(1px solid @cd)}
+.cm_br1ce{.func_br(1px solid @ce)}
+.cm_br1cf{.func_br(1px solid @cf)}
+
+.cm_br2c1{.func_br(2px solid @c1)}
+.cm_br2c2{.func_br(2px solid @c2)}
+.cm_br2c3{.func_br(2px solid @c3)}
+.cm_br2c4{.func_br(2px solid @c4)}
+.cm_br2c5{.func_br(2px solid @c5)}
+.cm_br2c6{.func_br(2px solid @c6)}
+.cm_br2c7{.func_br(2px solid @c7)}
+.cm_br2c0{.func_br(2px solid @c0)}
+.cm_br2cc{.func_br(2px solid @cc)}
+.cm_br2cd{.func_br(2px solid @cd)}
+.cm_br2ce{.func_br(2px solid @ce)}
+.cm_br2cf{.func_br(2px solid @cf)}
+
+.cm_br3c1{.func_br(3px solid @c1)}
+.cm_br3c2{.func_br(3px solid @c2)}
+.cm_br3c3{.func_br(3px solid @c3)}
+.cm_br3c4{.func_br(3px solid @c4)}
+.cm_br3c5{.func_br(3px solid @c5)}
+.cm_br3c6{.func_br(3px solid @c6)}
+.cm_br3c7{.func_br(3px solid @c7)}
+.cm_br3c0{.func_br(3px solid @c0)}
+.cm_br3cc{.func_br(3px solid @cc)}
+.cm_br3cd{.func_br(3px solid @cd)}
+.cm_br3ce{.func_br(3px solid @ce)}
+.cm_br3cf{.func_br(3px solid @cf)}
+//border-right
+//边框border
+
+//圆角
+//border-radius
+.func_bdr(@num){
+    .func(border-radius,@num*@num_fs);
+}
+.cm_br01{.func_bdr(0.1)}
+.cm_br02{.func_bdr(0.2)}
+.cm_br025{.func_bdr(0.25)}
+.cm_br03{.func_bdr(0.3)}
+.cm_br04{.func_bdr(0.4)}
+.cm_br05{.func_bdr(0.5)}
+.cm_br06{.func_bdr(0.6)}
+.cm_br07{.func_bdr(0.7)}
+.cm_br075{.func_bdr(0.75)}
+.cm_br1{.func_bdr(1)}
+.cm_br105{.func_bdr(1.5)}
+.cm_br2{.func_bdr(2)}
+.cm_br205{.func_bdr(2.5)}
+.cm_br3{.func_bdr(3)}
+.cm_br305{.func_bdr(3.5)}
+.cm_br4{.func_bdr(4)}
+.cm_br405{.func_bdr(4.5)}
+.cm_br5{.func_bdr(5)}
+//border-radius
+
+// border-top-right-radius
+.func_btrr(@num){
+    .func(border-top-right-radius,@num*@num_fs);
+}
+.cm_brtr01{.func_btrr(0.1)}
+.cm_brtr02{.func_btrr(0.2)}
+.cm_brtr025{.func_btrr(0.25)}
+.cm_brtr05{.func_btrr(0.5)}
+.cm_brtr1{.func_btrr(1)}
+.cm_brtr105{.func_btrr(1.5)}
+.cm_brtr2{.func_btrr(2)}
+// border-top-right-radius
+// border-top-left-radius
+.func_btlr(@num){
+    .func(border-top-left-radius,@num*@num_fs);
+}
+.cm_brtl01{.func_btlr(0.1)}
+.cm_brtl02{.func_btlr(0.2)}
+.cm_brtl025{.func_btlr(0.25)}
+.cm_brtl05{.func_btlr(0.5)}
+.cm_brtl1{.func_btlr(1)}
+.cm_brtl105{.func_btlr(1.5)}
+.cm_brtl2{.func_btlr(2)}
+// border-top-left-radius
+// border-bottom-right-radius
+.func_bbrr(@num){
+    .func(border-bottom-right-radius,@num*@num_fs);
+}
+.cm_brbr01{.func_bbrr(0.1)}
+.cm_brbr02{.func_bbrr(0.2)}
+.cm_brbr025{.func_bbrr(0.25)}
+.cm_brbr05{.func_bbrr(0.5)}
+.cm_brbr1{.func_bbrr(1)}
+.cm_brbr105{.func_bbrr(1.5)}
+.cm_brbr2{.func_bbrr(2)}
+// border-bottom-right-radius
+// border-bottom-left-radius
+.func_bblr(@num){
+    .func(border-bottom-left-radius,@num*@num_fs);
+}
+.cm_brbl01{.func_bblr(0.1)}
+.cm_brbl02{.func_bblr(0.2)}
+.cm_brbl025{.func_bblr(0.25)}
+.cm_brbl05{.func_bblr(0.5)}
+.cm_brbl1{.func_bblr(1)}
+.cm_brbl105{.func_bblr(1.5)}
+.cm_brbl2{.func_bblr(2)}
+// border-bottom-left-radius
+//圆角
+
+//box-shadow
+.func_bs(@num,@c){
+    .func(box-shadow,@num*@num_fs @num*@num_fs @num*@num_fs @c);
+}
+.cm_bs01c1{.func_bs(0.1,@c1)}
+.cm_bs01c2{.func_bs(0.1,@c2)}
+.cm_bs01c3{.func_bs(0.1,@c3)}
+.cm_bs01c4{.func_bs(0.1,@c4)}
+.cm_bs01c5{.func_bs(0.1,@c5)}
+.cm_bs01c6{.func_bs(0.1,@c6)}
+.cm_bs01c7{.func_bs(0.1,@c7)}
+.cm_bs01c0{.func_bs(0.1,@c0)}
+.cm_bs01cc{.func_bs(0.1,@cc)}
+.cm_bs01cd{.func_bs(0.1,@cd)}
+.cm_bs01ce{.func_bs(0.1,@ce)}
+.cm_bs01cf{.func_bs(0.1,@cf)}
+.cm_bs02c1{.func_bs(0.2,@c1)}
+.cm_bs02c2{.func_bs(0.2,@c2)}
+.cm_bs02c3{.func_bs(0.2,@c3)}
+.cm_bs02c4{.func_bs(0.2,@c4)}
+.cm_bs02c5{.func_bs(0.2,@c5)}
+.cm_bs02c6{.func_bs(0.2,@c6)}
+.cm_bs02c7{.func_bs(0.2,@c7)}
+.cm_bs02c0{.func_bs(0.2,@c0)}
+.cm_bs02cc{.func_bs(0.2,@cc)}
+.cm_bs02cd{.func_bs(0.2,@cd)}
+.cm_bs02ce{.func_bs(0.2,@ce)}
+.cm_bs02cf{.func_bs(0.2,@cf)}
+.cm_bs05c1{.func_bs(0.5,@c1)}
+.cm_bs05c2{.func_bs(0.5,@c2)}
+.cm_bs05c3{.func_bs(0.5,@c3)}
+.cm_bs05c4{.func_bs(0.5,@c4)}
+.cm_bs05c5{.func_bs(0.5,@c5)}
+.cm_bs05c6{.func_bs(0.5,@c6)}
+.cm_bs05c7{.func_bs(0.5,@c7)}
+.cm_bs05c0{.func_bs(0.5,@c0)}
+.cm_bs05cc{.func_bs(0.5,@cc)}
+.cm_bs05cd{.func_bs(0.5,@cd)}
+.cm_bs05ce{.func_bs(0.5,@ce)}
+.cm_bs05cf{.func_bs(0.5,@cf)}
+.cm_bs1c1{.func_bs(1,@c1)}
+.cm_bs1c2{.func_bs(1,@c2)}
+.cm_bs1c3{.func_bs(1,@c3)}
+.cm_bs1c4{.func_bs(1,@c4)}
+.cm_bs1c5{.func_bs(1,@c5)}
+.cm_bs1c6{.func_bs(1,@c6)}
+.cm_bs1c7{.func_bs(1,@c7)}
+.cm_bs1c0{.func_bs(1,@c0)}
+.cm_bs1cc{.func_bs(1,@cc)}
+.cm_bs1cd{.func_bs(1,@cd)}
+.cm_bs1ce{.func_bs(1,@ce)}
+.cm_bs1cf{.func_bs(1,@cf)}
+//box-shadow
+
+// overflow
+.func_of(@f){
+    overflow:@f;   
+}
+.cm_oa{.func_of(auto)}
+.cm_oh{.func_of(hidden)}
+.cm_ov{.func_of(visible)}
+.cm_os{.func_of(scroll)}
+.cm_oi{.func_of(inherit)}
+// overflow
+
+// overflow-x
+.func_oxf(@f){
+    overflow-x:@f;   
+}
+.cm_oxa{.func_oxf(auto)}
+.cm_oxh{.func_oxf(hidden)}
+.cm_oxv{.func_oxf(visible)}
+.cm_oxs{.func_oxf(scroll)}
+.cm_oxi{.func_oxf(inherit)}
+// overflow-x
+// overflow-y
+.func_oyf(@f){
+    overflow-y:@f;   
+}
+.cm_oya{.func_oyf(auto)}
+.cm_oyh{.func_oyf(hidden)}
+.cm_oyv{.func_oyf(visible)}
+.cm_oys{.func_oyf(scroll)}
+.cm_oyi{.func_oyf(inherit)}
+// overflow-y
+
+//visible
+.func_v(@v){
+    visibility:@v;
+}
+.cm_vh{.func_v(hidden)}
+.cm_vv{.func_v(visible)}
+.cm_vi{.func_v(inherit)}
+.cm_vc{.func_v(collapse)}
+//visible
+
+//list-style:
+.func_li(@i){
+    list-style: @i;
+}
+.cm_lids li{.func_li(disc)}
+.cm_lic li{.func_li(circle)}
+.cm_lis li{.func_li(square)}
+.cm_lidc li{.func_li(decimal)}
+.cm_lilr li{.func_li(lower-roman)}
+.cm_liur li{.func_li(upper-roman)}
+.cm_lila li{.func_li(lower-alpha)}
+.cm_liua li{.func_li(upper-alpha)}
+.cm_lids2>li{.func_li(disc)}
+.cm_lic2>li{.func_li(circle)}
+.cm_lis2>li{.func_li(square)}
+.cm_lidc2>li{.func_li(decimal)}
+.cm_lilr2>li{.func_li(lower-roman)}
+.cm_liur2>li{.func_li(upper-roman)}
+.cm_lila2>li{.func_li(lower-alpha)}
+.cm_liua2>li{.func_li(upper-alpha)}
+//list-style:
+
+//设置图片
+.func_img(@x,@y){
+    background-size:@x,@y!important;
+}
+.cm_bs100{.func_img(100%,100%)}
+.cm_w100{width:100%;}
+.cm_h100{height:100%;}
+.cm_wh100{width:100%;height:100%;}
+//设置图片
+
+//pre自动换行
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+//pre自动换行
+//省略文字..
+.cm_ts{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap !important;
+    outline: 0 !important
+}
+.cm_ws_nm{white-space:normal}
+.cm_ws_p{white-space:pre}
+.cm_ws_nw{white-space:nowrap}
+.cm_wb_n{word-break:normal}
+.cm_wb_b{word-break:break-all}
+.cm_wb_k{word-break:keep-all}
+.cm_ww_n{word-wrap:normal}
+.cm_ww_b{word-wrap:break-word}
+//省略文字..
+
+/*cmui栅格系统*/
+//适配手机与PC
+.cm_pc_1,.cm_pc_2,.cm_pc_3,.cm_pc_4,.cm_pc_5,.cm_pc_6,.cm_pc_7,.cm_pc_8,.cm_pc_9,.cm_pc_10,.cm_pc_11,.cm_pc_12,.cm_mob_1,.cm_mob_2,.cm_mob_3,.cm_mob_4,.cm_mob_5,.cm_mob_6,.cm_mob_7,.cm_mob_8,.cm_mob_9,.cm_mob_10,.cm_mob_11,.cm_mob_12,.cm_pc_1f,.cm_pc_2f,.cm_pc_3f,.cm_pc_4f,.cm_pc_5f,.cm_pc_6f,.cm_pc_7f,.cm_pc_8f,.cm_pc_9f,.cm_pc_10f,.cm_pc_11f,.cm_pc_12f,.cm_mob_1f,.cm_mob_2f,.cm_mob_3f,.cm_mob_4f,.cm_mob_5f,.cm_mob_6f,.cm_mob_7f,.cm_mob_8f,.cm_mob_9f,.cm_mob_10f,.cm_mob_11f,.cm_mob_12f{
+    position: relative;
+    float: left;
+}
+.func_pcmob(@n){
+    width: 100*@n*@num_bf1/12;
+}
+//pc布局
+.cm_pc_1{.func_pcmob(1)}
+.cm_pc_2{.func_pcmob(2)}
+.cm_pc_3{.func_pcmob(3)}
+.cm_pc_4{.func_pcmob(4)}
+.cm_pc_5{.func_pcmob(5)}
+.cm_pc_6{.func_pcmob(6)}
+.cm_pc_7{.func_pcmob(7)}
+.cm_pc_8{.func_pcmob(8)}
+.cm_pc_9{.func_pcmob(9)}
+.cm_pc_10{.func_pcmob(10)}
+.cm_pc_11{.func_pcmob(11)}
+.cm_pc_12{.func_pcmob(12)}
+//pc布局
+//栅格平均分
+.func_fen(@num){
+    width:100/@num*@num_bf1;
+}
+.cm_pc_1f{.func_fen(1)}
+.cm_pc_2f{.func_fen(2)}
+.cm_pc_3f{.func_fen(3)}
+.cm_pc_4f{.func_fen(4)}
+.cm_pc_5f{.func_fen(5)}
+.cm_pc_6f{.func_fen(6)}
+.cm_pc_7f{.func_fen(7)}
+.cm_pc_8f{.func_fen(8)}
+.cm_pc_9f{.func_fen(9)}
+.cm_pc_10f{.func_fen(10)}
+.cm_pc_11f{.func_fen(11)}
+.cm_pc_12f{.func_fen(12)}
+//栅格平均分
+//pc  1200px
+.cm_main,.cm_main2 {
+    float:none;
+    padding: 0;
+    margin:0 auto;
+}
+.com_main:before,
+.com_main:after,
+.com_main2:before,
+.com_main2:after{
+    display: table;
+    content: " ";
+    clear: both;
+}
+.cm_main{width: 1200px!important;}
+.cm_main2{width: 100%;}
+.cm_pc{
+    display:block!important;
+}
+.cm_pc_i{
+    display:inline-block!important;
+}
+.cm_mob{
+    display:none!important;
+}
+.cm_mob_i{
+    display:none!important;
+}
+//pc  1200px
+//mobile布局
+@media (max-width: 768px) {
+    .cm_mob_1{.func_pcmob(1)}
+    .cm_mob_2{.func_pcmob(2)}
+    .cm_mob_3{.func_pcmob(3)}
+    .cm_mob_4{.func_pcmob(4)}
+    .cm_mob_5{.func_pcmob(5)}
+    .cm_mob_6{.func_pcmob(6)}
+    .cm_mob_7{.func_pcmob(7)}
+    .cm_mob_8{.func_pcmob(8)}
+    .cm_mob_9{.func_pcmob(9)}
+    .cm_mob_10{.func_pcmob(10)}
+    .cm_mob_11{.func_pcmob(11)}
+    .cm_mob_12{.func_pcmob(12)}
+    .cm_mob_1f{.func_fen(1)}
+    .cm_mob_2f{.func_fen(2)}
+    .cm_mob_3f{.func_fen(3)}
+    .cm_mob_4f{.func_fen(4)}
+    .cm_mob_5f{.func_fen(5)}
+    .cm_mob_6f{.func_fen(6)}
+    .cm_mob_7f{.func_fen(7)}
+    .cm_mob_8f{.func_fen(8)}
+    .cm_mob_9f{.func_fen(9)}
+    .cm_mob_10f{.func_fen(10)}
+    .cm_mob_11f{.func_fen(11)}
+    .cm_mob_12f{.func_fen(12)}
+    .cm_main {
+        width: 100%!important;
+    }
+    .cm_main2 {
+        width: 100%!important;
+    }
+    .cm_pc{
+        display:none!important;
+    }
+    .cm_pc_i{
+        display:none!important;
+    }
+    .cm_mob{
+        display:block!important;
+    }
+    .cm_mob_i{
+        display:inline-block!important;
+    }
+}
+//mobile布局
+/*cmui栅格系统*/
+//input 
+.cm_input input{
+    margin: 0px;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+    padding: 0;
+    background: none;
+    text-decoration: none;
+    display: block;
+}
+input::-webkit-input-placeholder{color:#9b9b9b;}
+input:-moz-placeholder{color:#9b9b9b;}
+.cm_input textarea{
+    margin: 0px;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+    padding: 0;
+    background: none;
+    text-decoration: none;
+    display: block;
+}
+//input
+/*-----radio----*/
+label {
+    display: inline;
+}
+.radio-1 {
+    width: 193px;
+}
+.cm_radio {
+    display: none;
+}
+.cm_radio + label {
+    -webkit-appearance: none;
+    background-color: #fafafa;
+    border: 1px solid #5f5;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 9px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+}
+.cm_radio:checked + label:after {
+    content: '\2714';
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    position: absolute;
+    top: 2px;
+    text-shadow: 0px;
+    left: 2px;
+}
+/*old 圆心*/
+.cm_radio2:checked + label:after {
+    content: ' ';
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    position: absolute;
+    top: 3px;
+    background: #99a1a7;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+    text-shadow: 0px;
+    left: 3px;
+    font-size: 32px;
+}
+.cm_radio:checked + label {
+    color: #5f5;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1);
+}
+.cm_radio + label:active, .cm_radio:checked + label:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+.big_radio + label {
+    padding: 16px;
+}
+.big_radio:checked + label:after {
+    width: 24px;
+    height: 24px;
+    left: 8px;
+    top: 8px;
+}
+/*<div class="cm_fl">
+     <input type="radio" id="radio-1-1" name="radio-1-set" class="cm_radio" checked /><label for="radio-1-1"></label>
+ </div> 
+ <div class="cm_fl">
+      <input type="radio" id="radio-2-5" name="radio-2-set" class="cm_radio big_radio" /><label for="radio-2-5"></label>
+ </div> */
+/*-----radio----*/
+/*-----checkbox----*/
+.cm_checkbox {
+    display: none;
+}
+.cm_checkbox + label {
+    background-color: #fafafa;
+    border: 1px solid #5f5;
+    /*box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);*/
+    padding: 0.5em;
+    border-radius: 0.2em;
+    display: inline-block;
+    position: relative;
+}
+.cm_checkbox + label:active, .cm_checkbox:checked + label:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+.cm_checkbox:checked + label {
+    /*background-color: #e9ecee;*/
+    /*border: 1px solid #adb8c0;*/
+    /*box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);*/
+    color: #5f5;
+}
+.cm_checkbox:checked + label:after {
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    color: #5f5;
+}
+.big_checkbox + label {
+    padding: 18px;
+}
+.big_checkbox:checked + label:after {
+    font-size: 28px;
+    left: 6px;
+}
+.cm_page {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    left: 0;
+    z-index: 5;
+}
+/*<div class="cm_fl">
+     <input type="checkbox" id="checkbox-1-1" class="cm_checkbox" /><label for="checkbox-1-1"></label>
+ </div> 
+ <div class="cm_fl">
+      <input type="checkbox" id="checkbox-2-1" class="cm_checkbox big_checkbox" /><label for="checkbox-2-1"></label>
+ </div> */
+/*-----checkbox----*/
+//一些组件
+//窗口动画
+.cm_load {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+}
+.cm_ani(@name,@val){
+    @-webkit-keyframes @name {
+        0% {.func(transform,@val);}
+        100% {.func(transform,none);}
+    }
+    @-moz-keyframes @name {
+        0% {.func(transform,@val);}
+        100% {.func(transform,none);}
+    }
+    @-ms-keyframes @name {
+        0% {.func(transform,@val);}
+        100% {.func(transform,none);}
+    }
+    @keyframes @name {
+        0% {.func(transform,@val);}
+        100% {.func(transform,none);}
+    }
+}
+.cm_ani(cm_r2l,translate3d(100%,0,0));
+.cm_ani(cm_l2r,translate3d(-100%,0,0));
+
+.cm_ani2(@name,@val){
+    animation-name:@name;
+    animation-duration:@val;
+}
+
+.cm_Wr2l01{
+    .cm_ani2(cm_r2l,0.1s);
+}
+.cm_Wr2l02{
+    .cm_ani2(cm_r2l,0.2s);
+}
+.cm_Wr2l03{
+    .cm_ani2(cm_r2l,0.3s);
+}
+.cm_Wr2l04{
+    .cm_ani2(cm_r2l,0.4s);
+}
+.cm_Wr2l05{
+    .cm_ani2(cm_r2l,0.5s);
+}
+.cm_Wl2r01{
+    .cm_ani2(cm_l2r,0.1s);
+}
+.cm_Wl2r02{
+    .cm_ani2(cm_l2r,0.2s);
+}
+.cm_Wl2r03{
+    .cm_ani2(cm_l2r,0.3s);
+}
+.cm_Wl2r04{
+    .cm_ani2(cm_l2r,0.4s);
+}
+.cm_Wl2r05{
+    .cm_ani2(cm_l2r,0.5s);
+}
+
+.cm_ani3(@name,@num){
+    @-webkit-keyframes @name {
+        0% {.func_ot(@num);}
+        100% {.func_ot(1);}
+    }
+    @-moz-keyframes @name {
+        0% {.func_ot(@num);}
+        100% {.func_ot(1);}
+    }
+    @-ms-keyframes @name {
+        0% {.func_ot(@num);}
+        100% {.func_ot(1);}
+    }
+    @keyframes @name {
+        0% {.func_ot(@num);}
+        100% {.func_ot(1);}
+    }
+}
+.cm_ani3(cm_o2o,0);
+.cm_Wo2o01{
+    .cm_ani2(cm_o2o,0.1s);
+}
+.cm_Wo2o02{
+    .cm_ani2(cm_o2o,0.2s);
+}
+.cm_Wo2o03{
+    .cm_ani2(cm_o2o,0.3s);
+}
+.cm_Wo2o04{
+    .cm_ani2(cm_o2o,0.4s);
+}
+.cm_Wo2o05{
+    .cm_ani2(cm_o2o,0.5s);
+}
+
+//窗口动画
+
+.cm_up{
+    .func(transform,rotate(0deg));
+    .func3(-webkit-transition,-webkit-transform 1s);
+    .func3(-moz-transition,-moz-transform 1s);
+    .func3(-ms-transition,-ms-transform 1s);
+    .func3(transition,transform 1s);
+}
+.cm_down{
+    .func(transform,rotate(-180deg));
+    .func3(-webkit-transition,-webkit-transform 1s);
+    .func3(-moz-transition,-moz-transform 1s);
+    .func3(-ms-transition,-ms-transform 1s);
+    .func3(transition,transform 1s);
+}
+.cm_upts{
+    display:block;
+    position:fixed;
+    z-index:33333333;
+    background:rgba(0,0,0,0.38);
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.cm_tsdiv{
+    display:block;
+    background:rgba(255,255,255,0.94);
+    width:76%;
+    height:5em;
+    line-height:5em;
+    margin:10em 12% 0 12%;
+    border-radius:0.5em;
+    text-align:center;
+}
+.cmqdk{
+    display:block;
+    position:fixed;
+    z-index:33333333;
+    background:rgba(0,0,0,0.38);
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.cm_tsdiv2 {
+    display: block;
+    background: rgba(255,255,255,0.94);
+    width: 100%;
+    min-height: 6em;
+    border-radius: 0.5em;
+    text-align: center;
+    position: relative;
+}
+.cm_qptop{float:left;background-color:#eee;padding:0 0.5em;width:100%;word-break:break-all;
+         -webkit-border-radius:0.5em;-moz-border-radius:0.5em;border-radius:0.5em;position:relative;
+}
+.cm_qptop:before{
+    position:absolute;
+    content:'\00a0';
+    width:0px;
+    height:0px;
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+    border-bottom: 0.5em solid #eee;
+    top: -0.5em;
+    left: 1em;
+}
+.cm_qpleft{float:left;background-color:#fff;padding:10px;width:100%;word-break:break-all;
+         -webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;position:relative;
+         background-image:-moz-linear-gradient(hsla(0,0%,100%, 0.6), hsla(0, 0%, 100%, 0)  30px);
+         background-image:-webkie-gradient(linear, 0 0, 0 30, from(hsla(0, 0%, 100%, 0.6)), to(hsla(0, 0%, 100%, 0)));
+}
+.cm_qpleft:before{
+    position:absolute;
+    content:'\00a0';
+    width:0px;
+    height:0px;
+    border-width:8px 18px 8px 0;
+    border-style:solid;
+    border-color:transparent #fff transparent transparent;
+    top:10px;
+    left:-15px;
+}
+.cm_qpright{float:right;background-color:rgb(255,168,168);color:#fff;padding:10px;width:100%;word-break:break-all;
+        -webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;position:relative;
+        background-image:-moz-linear-gradient(hsla(0,0%,100%, 0.6), hsla(0, 0%, 100%, 0)  30px);
+        background-image:-webkie-gradient(linear, 0 0, 0 30, from(hsla(0, 0%, 100%, 0.6)), to(hsla(0, 0%, 100%, 0)));
+}
+.cm_qpright:before{
+    position:absolute;
+    content:'\00a0';
+    display:inline-block;
+    width:0px;
+    height:0px;
+    border-width:8px 0px 8px 18px;
+    border-style:solid;
+    border-color:transparent transparent transparent rgb(255,168,168);
+    right:-15px;
+    top:10px;                  
+}
+.cm_qpbottom {
+    width: 100%;
+    min-height: 1em;
+    line-height:1em;
+    position: relative;
+    background: #fff;
+    border: 1px solid #fff;
+}
+.cm_qpbottom:after, .cm_qpbottom:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.cm_qpbottom:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #fff;
+    border-width: 0.7em;
+    margin-left: -0.7em;
+}
+.cm_qpbottom:before {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #fff;
+    border-width: 0.7em;
+    margin-left: -0.7em;
+}
+
+
+
+//一些组件
+//公共less

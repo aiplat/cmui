@@ -3,7 +3,4 @@ node_modules/
 .idea/
 .vs/
 nbproject/
-less/
-build/
-less.js
 npm-debug.log
